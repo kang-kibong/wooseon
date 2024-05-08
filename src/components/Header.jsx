@@ -14,6 +14,7 @@ const Header = () => {
 export default Header;
 
 const Layout = styled.header`
+  background-color: #fff;
   box-sizing: border-box;
   height: 60px;
   padding: 20px 30px;
