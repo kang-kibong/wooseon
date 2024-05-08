@@ -14,11 +14,14 @@ const Header = () => {
 export default Header;
 
 const Layout = styled.header`
+  position: fixed;
+  width: 100%;
   background-color: #fff;
   box-sizing: border-box;
   height: 60px;
   padding: 20px 30px;
   border-bottom: 1px solid rgba(0, 27, 55, 0.1);
+  z-index: 9;
 `;
 
 const Container = styled.div`
