@@ -7,8 +7,13 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import useIntersectionObsever from "../hooks/useIntersectionObsever";
 import { useEffect, useRef, useState } from "react";
+import ReactGA from "react-ga";
 
 const Home = () => {
+  const gaTrackingId = import.meta.env.VITE_APP_GA_TRACKING_ID;
+  ReactGA.initialize(gaTrackingId, { debug: true });
+  ReactGA.pageview(window.location.pathname);
+
   const [position, setPosition] = useState(0);
 
   const ref1 = useRef(null);
