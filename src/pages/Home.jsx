@@ -7,7 +7,7 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import useIntersectionObsever from "../hooks/useIntersectionObsever";
 import { useEffect, useRef, useState } from "react";
-
+import ReactGA from "react-ga4";
 
 const Home = () => {
   const [position, setPosition] = useState(0);
@@ -33,6 +33,10 @@ const Home = () => {
 
   const onClick = () => {
     const link = "https://forms.gle/1HVpvz1D6akNnCsi6";
+    ReactGA.event({
+      category: "멘토링 받으러 가기 버튼", //각각 다른 하위 name
+      action: "버튼 클릭", //공통(상위 name)//같은 거로 묶을때 동일하게 작성
+    });
     window.location.href = link;
   };
 
