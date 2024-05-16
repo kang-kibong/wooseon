@@ -18,7 +18,6 @@ const ServiceEffect = () => {
               <Opacity />
             </ImageContainer>
           </ContentDiv>
-
           <TextContainer>
             <h2>
               {`가고 싶은 기업이 있나요?\n`}
@@ -99,7 +98,7 @@ const ContentDiv = styled.div`
     @keyframes up {
       from {
         opacity: 0;
-        transform: translateY(3%);
+        transform: translateY(2%);
       }
       to {
         opacity: 1;

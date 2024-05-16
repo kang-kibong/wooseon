@@ -10,6 +10,7 @@ import ReactGA from "react-ga4";
 import Catchphrase from "../components/home/Catchphrase";
 import ServiceFlow from "../components/home/ServiceFlow";
 import ServiceEffect from "../components/home/ServiceEffect";
+import CompanyMarquee from "../components/home/CompanyMarquee";
 
 const Home = () => {
   const [position, setPosition] = useState(0);
@@ -49,6 +50,7 @@ const Home = () => {
         <Catchphrase />
         <ServiceFlow />
         <ServiceEffect />
+        <CompanyMarquee />
         {/* <Section>
           <ContentDiv ref={ref1} className={isInViewport1 ? "animation" : ""}>
             <Inner>

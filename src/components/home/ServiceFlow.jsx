@@ -23,7 +23,7 @@ const ServiceFlow = () => {
     <ContentDiv ref={ref} className={isInViewport ? "animation" : ""}>
       <Layout>
         <Inner>
-          <InnerConatiner>
+          <InnerCotainer>
             <TextContainer>
               <h2>
                 오직 <Strong>당신</Strong>만을 위한 멘토링
@@ -49,7 +49,7 @@ const ServiceFlow = () => {
               onClick={handleClick}
               text="멘토링 무료로 시작하기"
             />
-          </InnerConatiner>
+          </InnerCotainer>
         </Inner>
       </Layout>
     </ContentDiv>
@@ -65,7 +65,7 @@ const Layout = styled.section`
   color: #292d32;
 `;
 
-const InnerConatiner = styled.div`
+const InnerCotainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,10 +89,6 @@ const TextContainer = styled.div`
     margin-bottom: 32px;
   }
 
-  p:last-child {
-    margin-bottom: 0;
-  }
-
   margin-bottom: 40px;
 `;
 
@@ -107,6 +103,11 @@ const StepsContainer = styled.div`
   p {
     color: #fff;
     font-weight: 700;
+    margin-bottom: 32px;
+  }
+  
+  p:last-child {
+    margin-bottom: 0;
   }
 
   img {
