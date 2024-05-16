@@ -69,7 +69,7 @@ const Layout = styled.section`
   color: #292d32;
 
   h1 {
-    font-size: 50px;
+    font-size: 51px;
     font-weight: 700;
     margin-bottom: 16px;
     line-height: 1.7;
@@ -78,6 +78,7 @@ const Layout = styled.section`
   p {
     font-size: 24px;
     line-height: 1.5;
+    color: rgb(77, 85, 94);
   }
 `;
 

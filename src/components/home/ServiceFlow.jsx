@@ -44,10 +44,10 @@ const ServiceFlow = () => {
               <p>{`매칭된 멘토님과\n멘토링 진행하기`}</p>
             </StepsContainer>
             <Button
-              width="200"
+              width="170"
               height="56"
               onClick={handleClick}
-              text="멘토링 무료로 시작하기"
+              text="입력하러 가기"
             />
           </InnerCotainer>
         </Inner>
@@ -72,24 +72,24 @@ const InnerCotainer = styled.div`
   align-items: center;
 
   button {
+    font-size: 20px;
     font-weight: 700;
   }
 `;
 
 const TextContainer = styled.div`
   h2 {
-    font-size: 32px;
+    font-size: 45px;
     font-weight: 700;
     margin-bottom: 14px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6;
     margin-bottom: 32px;
+    color: rgb(77, 85, 94);
   }
-
-  margin-bottom: 40px;
 `;
 
 const StepsContainer = styled.div`
@@ -98,14 +98,16 @@ const StepsContainer = styled.div`
   background-color: #000;
   border-radius: 20px;
   padding: 48px;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 
   p {
     color: #fff;
     font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
     margin-bottom: 32px;
   }
-  
+
   p:last-child {
     margin-bottom: 0;
   }

@@ -1,15 +1,20 @@
 import styled from "styled-components";
 import CompanyLogo from "../../assets/images/day&night.png";
+import Inner from "./Inner";
 
 const Footer = () => {
   return (
     <Layout>
-      <CompanyContainer>
-        <img src={CompanyLogo} alt="day&night" />
-      </CompanyContainer>
-      <CopyrightText>
-        © 2024 Day & Night Company. All rights reserved.
-      </CopyrightText>
+      <Inner>
+        <Container>
+          <CompanyContainer>
+            <img src={CompanyLogo} alt="day&night" />
+          </CompanyContainer>
+          <CopyrightText>
+            © 2024 Day & Night Company. All rights reserved.
+          </CopyrightText>
+        </Container>
+      </Inner>
     </Layout>
   );
 };
@@ -24,6 +29,10 @@ const Layout = styled.footer`
   height: 92px;
   background-color: #fff;
   border-top: 1px solid rgba(0, 27, 55, 0.1);
+`;
+
+const Container = styled.div`
+  display: flex;
 `;
 
 const CompanyContainer = styled.div`

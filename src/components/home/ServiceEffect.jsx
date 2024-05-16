@@ -25,9 +25,9 @@ const ServiceEffect = () => {
               {`이 도와드릴게요!`}
             </h2>
             <p>
-              {`50명 이상의 멘토님들이\n당신을 기다리고 있어요!\n당신에게 `}
-              <Strong>딱 맞는 멘토링</Strong>
-              {`\n저희가 보여드릴게요!`}
+              {`50명 이상의 멘토님들이 당신을 기다리고 있어요!\n당신에게 `}
+              <Strong>딱 맞는 멘토링!</Strong>
+              {`\n우선이 보여드릴게요!`}
             </p>
           </TextContainer>
         </InnerContainer>
@@ -41,6 +41,7 @@ export default ServiceEffect;
 const Layout = styled.section`
   padding: 120px 0 120px 0;
   white-space: pre;
+  color: #292d32;
 `;
 
 const InnerContainer = styled.div`
@@ -73,14 +74,15 @@ const TextContainer = styled.div`
   justify-content: center;
 
   h2 {
-    font-size: 32px;
+    font-size: 45px;
     font-weight: 700;
     line-height: 1.4;
     margin-bottom: 14px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 24px;
+    color: rgb(77, 85, 94);
     line-height: 1.6;
     margin-bottom: 32px;
   }
