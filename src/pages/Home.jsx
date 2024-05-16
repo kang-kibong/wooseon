@@ -45,13 +45,8 @@ const Home = () => {
       <Header />
       <main>
         <section>
-          <ImageContainer
-            style={{
-              backgroundPosition: `center calc(50% + ${position / 1.5}px)`,
-            }}
-          >
-            <Title>멘토링의 모든것</Title>
-          </ImageContainer>
+          <h1>원하는 기업의 멘토에게 먼저 멘토링 제안을 받아보세요.</h1>
+          <p>{`가고싶은 기업의 멘토, \n 저희가 알아서 찾아드릴게요`}</p>
         </section>
         <Section>
           <ContentDiv ref={ref1} className={isInViewport1 ? "animation" : ""}>

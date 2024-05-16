@@ -4,9 +4,7 @@ import styled from "styled-components";
 const Header = () => {
   return (
     <Layout>
-      <Container>
-        <Logo src={LogoImage} alt="우선" />
-      </Container>
+      <Logo src={LogoImage} alt="우선" />
     </Layout>
   );
 };
@@ -22,13 +20,23 @@ const Layout = styled.header`
   padding: 20px 30px;
   border-bottom: 1px solid rgba(0, 27, 55, 0.1);
   z-index: 9;
-`;
 
-const Container = styled.div`
-  width: 1048px;
-  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    height: 48px;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 36px;
+  }
 `;
 
 const Logo = styled.img`
   width: 120px;
+  @media screen and (max-width: 768px) {
+    width: 80px;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 60px;
+  }
 `;
