@@ -1,4 +1,4 @@
-import LogoImage from "../assets/images/wooseon-logo.svg";
+import LogoImage from "../../assets/images/wooseon-logo.svg";
 import styled from "styled-components";
 
 const Header = () => {

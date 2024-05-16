@@ -1,13 +1,13 @@
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
 import Companies from "../assets/images/companies.png";
-import Woman from "../assets/images/woman.jpg";
-import Inner from "../components/Inner";
+import Inner from "../components/common/Inner";
 import styled from "styled-components";
-import Button from "../components/Button";
+import Button from "../components/common/Button";
 import useIntersectionObsever from "../hooks/useIntersectionObsever";
 import { useEffect, useRef, useState } from "react";
 import ReactGA from "react-ga4";
+import Catchphrase from "../components/home/Catchphrase";
 
 const Home = () => {
   const [position, setPosition] = useState(0);
@@ -31,10 +31,10 @@ const Home = () => {
     };
   }, []);
 
-  const onClick = () => {
+  const handleClick = () => {
     const link = "https://forms.gle/1HVpvz1D6akNnCsi6";
     ReactGA.event({
-      category: "멘토링 받으러 가기 버튼", //각각 다른 하위 name
+      category: "멘토링 받으러 가기 버튼",
       action: "버튼 클릭", //공통(상위 name)//같은 거로 묶을때 동일하게 작성
     });
     window.location.href = link;
@@ -44,10 +44,7 @@ const Home = () => {
     <>
       <Header />
       <main>
-        <section>
-          <h1>원하는 기업의 멘토에게 먼저 멘토링 제안을 받아보세요.</h1>
-          <p>{`가고싶은 기업의 멘토, \n 저희가 알아서 찾아드릴게요`}</p>
-        </section>
+        <Catchphrase />
         <Section>
           <ContentDiv ref={ref1} className={isInViewport1 ? "animation" : ""}>
             <Inner>
@@ -102,7 +99,7 @@ const Home = () => {
                 <Button
                   type="button"
                   text="멘토링 받으러가기"
-                  onClick={onClick}
+                  onClick={handleClick}
                 />
               </Mentoring>
             </Inner>
@@ -120,22 +117,6 @@ const Section = styled.section`
   padding: 150px 0 150px 0;
   &:nth-child(3) {
     background-color: #f2f4f6;
-  }
-`;
-
-const ImageContainer = styled.div`
-  height: 700px;
-  background-image: url(${Woman});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 60px;
-
-  h1 {
-    color: #fff;
   }
 `;
 

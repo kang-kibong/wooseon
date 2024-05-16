@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import CompanyLogo from "../assets/images/day&night.png";
+import CompanyLogo from "../../assets/images/day&night.png";
 
 const Footer = () => {
   return (

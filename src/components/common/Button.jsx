@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const Button = ({ type, text, onClick }) => {
+const Button = ({ type, text, width, height, onClick }) => {
   return (
-    <ButtonLayout type={type} onClick={onClick}>
+    <ButtonLayout type={type} onClick={onClick} width={width} height={height}>
       {text}
     </ButtonLayout>
   );
@@ -11,14 +11,17 @@ const Button = ({ type, text, onClick }) => {
 export default Button;
 
 const ButtonLayout = styled.button`
-  border: none;
-  border-radius: 7px;
-  outline: none;
+  box-sizing: border-box;
+  display: flex;
   justify-content: center;
   align-items: center;
+  width: ${({ width }) => width}px;
+  height: ${({ height }) => height}px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  padding: 0 20px;
   cursor: pointer;
-  padding: 11px 16px;
-  height: 40px;
   background-color: #3182f6;
   color: #fff;
   transition: background-color 0.25s;
