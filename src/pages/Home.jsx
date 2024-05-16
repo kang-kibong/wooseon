@@ -8,6 +8,7 @@ import useIntersectionObsever from "../hooks/useIntersectionObsever";
 import { useEffect, useRef, useState } from "react";
 import ReactGA from "react-ga4";
 import Catchphrase from "../components/home/Catchphrase";
+import ServiceFlow from "../components/home/ServiceFlow";
 
 const Home = () => {
   const [position, setPosition] = useState(0);
@@ -35,7 +36,7 @@ const Home = () => {
     const link = "https://forms.gle/1HVpvz1D6akNnCsi6";
     ReactGA.event({
       category: "멘토링 받으러 가기 버튼",
-      action: "버튼 클릭", //공통(상위 name)//같은 거로 묶을때 동일하게 작성
+      action: "버튼 클릭",
     });
     window.location.href = link;
   };
@@ -45,6 +46,7 @@ const Home = () => {
       <Header />
       <main>
         <Catchphrase />
+        <ServiceFlow />
         <Section>
           <ContentDiv ref={ref1} className={isInViewport1 ? "animation" : ""}>
             <Inner>
@@ -196,11 +198,11 @@ const ContentDiv = styled.div`
     @keyframes opacity {
       from {
         opacity: 0;
-        transform: translateY(0);
+        transform: translateY(7%);
       }
       to {
         opacity: 1;
-        transform: translateY(-7%);
+        transform: translateY(0%);
       }
     }
   }
