@@ -1,7 +1,6 @@
 import DB from "./DB.jpg";
 import KG from "./KG.jpg";
 import SM from "./SM.png";
-import GHH from "./금호아시아나.png";
 import NEB from "./네이버.png";
 import NEC from "./넥슨.png";
 import NMB from "./넷마블.jpg";
@@ -51,7 +50,6 @@ const images = [
   DB,
   KG,
   SM,
-  GHH,
   NEB,
   NEC,
   NMB,
