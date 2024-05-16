@@ -20,21 +20,22 @@ const ServiceFlow = () => {
   };
 
   return (
-    <Layout>
-      <Inner>
-        <InnerConatiner>
-          <TextContainer>
-            <h1>
-              오직 <Strong>당신</Strong>만을 위한 멘토링
-            </h1>
-            <p>
-              {`가고싶은 회사는 많은데 어떻게 가야할지 감이 안오시나요?\n우선에서 여러분에게`}
-              <Strong> 딱 맞는 멘토</Strong>
-              {`님들을 `}<Strong>연결</Strong>
-              {`해드립니다!\n 멘토링을 통해 여러분의 꿈을 펼쳐보세요.`}
-            </p>
-          </TextContainer>
-          <ContentDiv ref={ref} className={isInViewport ? "animation" : ""}>
+    <ContentDiv ref={ref} className={isInViewport ? "animation" : ""}>
+      <Layout>
+        <Inner>
+          <InnerConatiner>
+            <TextContainer>
+              <h2>
+                오직 <Strong>당신</Strong>만을 위한 멘토링
+              </h2>
+              <p>
+                {`가고싶은 회사는 많은데 어떻게 가야할지 감이 안오시나요?\n우선에서 여러분에게`}
+                <Strong> 딱 맞는 멘토</Strong>
+                {`님들을 `}
+                <Strong>연결</Strong>
+                {`해드립니다!\n 멘토링을 통해 여러분의 꿈을 펼쳐보세요.`}
+              </p>
+            </TextContainer>
             <StepsContainer>
               <p>나의 스펙 입력하기</p>
               <img src={Arrow} alt="" />
@@ -42,17 +43,16 @@ const ServiceFlow = () => {
               <img src={Arrow} alt="" />
               <p>{`매칭된 멘토님과\n멘토링 진행하기`}</p>
             </StepsContainer>
-          </ContentDiv>
-
-          <Button
-            width="200"
-            height="56"
-            onClick={handleClick}
-            text="멘토링 무료로 시작하기"
-          />
-        </InnerConatiner>
-      </Inner>
-    </Layout>
+            <Button
+              width="200"
+              height="56"
+              onClick={handleClick}
+              text="멘토링 무료로 시작하기"
+            />
+          </InnerConatiner>
+        </Inner>
+      </Layout>
+    </ContentDiv>
   );
 };
 
@@ -63,22 +63,6 @@ const Layout = styled.section`
   white-space: pre;
   text-align: center;
   color: #292d32;
-
-  h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 14px;
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 32px;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
 `;
 
 const InnerConatiner = styled.div`
@@ -93,6 +77,22 @@ const InnerConatiner = styled.div`
 `;
 
 const TextContainer = styled.div`
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
   margin-bottom: 40px;
 `;
 

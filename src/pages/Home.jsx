@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from "react";
 import ReactGA from "react-ga4";
 import Catchphrase from "../components/home/Catchphrase";
 import ServiceFlow from "../components/home/ServiceFlow";
+import ServiceEffect from "../components/home/ServiceEffect";
 
 const Home = () => {
   const [position, setPosition] = useState(0);
@@ -47,7 +48,8 @@ const Home = () => {
       <main>
         <Catchphrase />
         <ServiceFlow />
-        <Section>
+        <ServiceEffect />
+        {/* <Section>
           <ContentDiv ref={ref1} className={isInViewport1 ? "animation" : ""}>
             <Inner>
               <Title>우선{"\n"}어떻게 하나요?</Title>
@@ -106,7 +108,7 @@ const Home = () => {
               </Mentoring>
             </Inner>
           </ContentDiv>
-        </Section>
+        </Section> */}
       </main>
       <Footer />
     </>
