@@ -29,7 +29,7 @@ const ServiceFlow = () => {
                 오직 <Strong>당신</Strong>만을 위한 멘토링
               </h2>
               <p>
-                {`가고싶은 회사는 많은데 어떻게 가야할지\n감이 안오시나요?\n우선에서 여러분에\n`}
+                {`가고싶은 회사는 많은데\n어떻게 가야할지감이 안오시나요?\n우선에서 여러분에\n`}
                 <Strong> 딱 맞는 멘토</Strong>
                 {`님들을 `}
                 <Strong>연결</Strong>
@@ -95,9 +95,10 @@ const TextContainer = styled.div`
   h2 {
     font-size: 45px;
     font-weight: 700;
-    margin-bottom: 14px;
+    margin-bottom: 24px;
 
     @media screen and (max-width: 1023px) {
+      font-size: 38px;
     }
 
     @media screen and (max-width: 540px) {
@@ -112,6 +113,7 @@ const TextContainer = styled.div`
     color: rgb(77, 85, 94);
 
     @media screen and (max-width: 1023px) {
+      font-size: 20px;
     }
 
     @media screen and (max-width: 540px) {

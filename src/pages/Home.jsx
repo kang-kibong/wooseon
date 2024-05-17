@@ -12,12 +12,12 @@ const Home = () => {
     <>
       <Header />
       <main>
-        {/* <Catchphrase /> */}
+        <Catchphrase />
         <ServiceFlow />
-        {/* <ServiceEffect />
-        <CompanyMarquee />
-        <Guidance />
-        <FAQ /> */}
+        <ServiceEffect />
+        {/* <CompanyMarquee /> */}
+        {/* <Guidance /> */}
+        {/* <FAQ /> */}
       </main>
       {/* <Footer /> */}
     </>
