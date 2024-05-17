@@ -7,14 +7,14 @@ const Inner = ({ children }) => {
 export default Inner;
 
 const Container = styled.div`
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
-    width: 940px;
+    max-width: 800px;
   }
 
   @media screen and (max-width: 540px) {
-    width: 450px;
+    max-width: 350px;
   }
 `;

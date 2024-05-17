@@ -65,7 +65,6 @@ const Layout = styled.section`
   justify-content: center;
   align-items: center;
   padding-top: 60px;
-  /* Layout 세로크기 */
   height: 790px;
   color: #292d32;
 
@@ -84,7 +83,6 @@ const Layout = styled.section`
 
   @media screen and (max-width: 1023px) {
     padding-top: 50px;
-    /* LAyout 세로 크기 */
     height: 500px;
 
     h1 {

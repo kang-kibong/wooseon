@@ -29,7 +29,7 @@ const ServiceFlow = () => {
                 오직 <Strong>당신</Strong>만을 위한 멘토링
               </h2>
               <p>
-                {`가고싶은 회사는 많은데 어떻게 가야할지 감이 안오시나요?\n우선에서 여러분에게`}
+                {`가고싶은 회사는 많은데 어떻게 가야할지\n감이 안오시나요?\n우선에서 여러분에\n`}
                 <Strong> 딱 맞는 멘토</Strong>
                 {`님들을 `}
                 <Strong>연결</Strong>
@@ -63,6 +63,14 @@ const Layout = styled.section`
   white-space: pre;
   text-align: center;
   color: #292d32;
+
+  @media screen and (max-width: 1023px) {
+    padding: 80px 0 80px 0;
+  }
+
+  @media screen and (max-width: 540px) {
+    padding: 60px 0 60px 0;
+  }
 `;
 
 const InnerCotainer = styled.div`
@@ -74,6 +82,12 @@ const InnerCotainer = styled.div`
   button {
     font-size: 20px;
     font-weight: 700;
+
+    @media screen and (max-width: 540px) {
+      font-size: 16px;
+      width: 150px;
+      height: 46px;
+    }
   }
 `;
 
@@ -82,6 +96,13 @@ const TextContainer = styled.div`
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 14px;
+
+    @media screen and (max-width: 1023px) {
+    }
+
+    @media screen and (max-width: 540px) {
+      font-size: 26px;
+    }
   }
 
   p {
@@ -89,6 +110,13 @@ const TextContainer = styled.div`
     line-height: 1.6;
     margin-bottom: 32px;
     color: rgb(77, 85, 94);
+
+    @media screen and (max-width: 1023px) {
+    }
+
+    @media screen and (max-width: 540px) {
+      font-size: 18px;
+    }
   }
 `;
 
@@ -114,6 +142,14 @@ const StepsContainer = styled.div`
 
   img {
     margin-bottom: 32px;
+  }
+
+  @media screen and (max-width: 1023px) {
+  }
+
+  @media screen and (max-width: 540px) {
+    width: 280px;
+    padding: 36px;
   }
 `;
 

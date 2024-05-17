@@ -13,6 +13,8 @@ export default Header;
 
 const Layout = styled.header`
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #fff;
   box-sizing: border-box;
@@ -22,11 +24,11 @@ const Layout = styled.header`
   z-index: 9;
 
   @media screen and (max-width: 1023px) {
-    height: 48px;
+    height: 56px;
   }
 
   @media screen and (max-width: 540px) {
-    width: 36px;
+    height: 52px;
   }
 `;
 

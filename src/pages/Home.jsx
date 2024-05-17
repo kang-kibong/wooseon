@@ -12,9 +12,9 @@ const Home = () => {
     <>
       <Header />
       <main>
-        <Catchphrase />
-        {/* <ServiceFlow />
-        <ServiceEffect />
+        {/* <Catchphrase /> */}
+        <ServiceFlow />
+        {/* <ServiceEffect />
         <CompanyMarquee />
         <Guidance />
         <FAQ /> */}
