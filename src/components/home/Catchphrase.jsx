@@ -65,6 +65,7 @@ const Layout = styled.section`
   justify-content: center;
   align-items: center;
   padding-top: 60px;
+  /* Layout 세로크기 */
   height: 790px;
   color: #292d32;
 
@@ -79,6 +80,40 @@ const Layout = styled.section`
     font-size: 24px;
     line-height: 1.5;
     color: rgb(77, 85, 94);
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding-top: 50px;
+    /* LAyout 세로 크기 */
+    height: 500px;
+
+    h1 {
+      font-size: 46px;
+      margin-bottom: 12px;
+      line-height: 1.7;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 22px;
+      line-height: 1.4;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    padding-top: 35px;
+    height: 350px;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 18px;
+    }
   }
 `;
 
@@ -102,6 +137,23 @@ const Inner = styled.div`
   button {
     font-weight: 700;
     font-size: 20px;
+
+    @media screen and (max-width: 540px) {
+      font-size: 16px;
+      width: 200px;
+      height: 46px;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    width: 940px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 540px) {
+    width: 450px;
   }
 `;
 
@@ -109,7 +161,11 @@ const Description = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: url();
+
+  @media screen and (max-width: 1023px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -120,8 +176,17 @@ const ImageContainer = styled.div`
 const Image = styled.div`
   position: absolute;
   img {
-    width: 150px;
+    width: 200px;
+
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 540px) {
+      display: none;
+    }
   }
+
   @keyframes motion {
     0% {
       margin-top: 0px;
@@ -139,33 +204,35 @@ const Image = styled.div`
       margin-top: 0px;
     }
   }
+
   &:first-child {
     top: 40%;
     left: -10%;
-    img {
-      width: 200px;
-    }
     animation: motion 0.8s infinite alternate;
   }
+
   &:nth-child(2) {
-    img {
-      width: 200px;
-    }
     top: 55%;
     left: 35%;
     animation: reverse-motion 0.8s infinite alternate;
   }
+
   &:nth-child(3) {
-    img {
-      width: 200px;
-    }
     top: 65%;
     left: -15%;
     animation: reverse-motion 0.8s infinite alternate;
   }
+
   &:nth-child(4) {
     img {
       width: 270px;
+      @media screen and (max-width: 1023px) {
+        width: 200px;
+      }
+
+      @media screen and (max-width: 540px) {
+        width: 15px;
+      }
     }
     top: 75%;
     left: 40%;
