@@ -80,6 +80,14 @@ const Layout = styled.section`
     font-weight: 700;
     text-align: center;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 38px;
+    }
+
+    @media screen and (max-width: 540px) {
+      font-size: 26px;
+    }
   }
 `;
 

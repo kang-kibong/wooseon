@@ -17,7 +17,7 @@ const Home = () => {
         <ServiceEffect />
         <CompanyMarquee />
         <Guidance />
-        {/* <FAQ /> */}
+        <FAQ />
       </main>
       {/* <Footer /> */}
     </>
