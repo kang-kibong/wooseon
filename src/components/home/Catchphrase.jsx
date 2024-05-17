@@ -82,7 +82,7 @@ const Layout = styled.section`
   }
 
   @media screen and (max-width: 1023px) {
-    padding-top: 50px;
+    padding-top: 80px;
     height: 500px;
 
     h1 {
@@ -102,7 +102,7 @@ const Layout = styled.section`
   }
 
   @media screen and (max-width: 540px) {
-    padding-top: 35px;
+    padding-top: 60px;
     height: 350px;
 
     h1 {

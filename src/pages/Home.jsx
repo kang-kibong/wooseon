@@ -19,7 +19,7 @@ const Home = () => {
         <Guidance />
         <FAQ />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

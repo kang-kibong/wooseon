@@ -11,7 +11,7 @@ const Footer = () => {
             <img src={CompanyLogo} alt="day&night" />
           </CompanyContainer>
           <CopyrightText>
-            © 2024 Day & Night Company. All rights reserved.
+            {`© 2024 Day & Night Company.\nAll rights reserved.`}
           </CopyrightText>
         </Container>
       </Inner>
@@ -22,6 +22,8 @@ const Footer = () => {
 export default Footer;
 
 const Layout = styled.footer`
+  white-space: pre;
+  line-height: 1.2;
   padding: 0 20px 0 20px;
   display: flex;
   justify-content: center;
@@ -33,6 +35,8 @@ const Layout = styled.footer`
 
 const Container = styled.div`
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const CompanyContainer = styled.div`
@@ -40,11 +44,15 @@ const CompanyContainer = styled.div`
   & img {
     width: 100px;
   }
+  margin-right: 24px;
 `;
 
 const CopyrightText = styled.p`
   color: #333;
   display: flex;
-  justify-content: center;
   flex-grow: 2;
+
+  @media screen and (max-width: 540px) {
+    font-size: 12px;
+  }
 `;
