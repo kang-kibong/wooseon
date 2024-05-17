@@ -21,22 +21,22 @@ const Layout = styled.header`
   border-bottom: 1px solid rgba(0, 27, 55, 0.1);
   z-index: 9;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1023px) {
     height: 48px;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 540px) {
     width: 36px;
   }
 `;
 
 const Logo = styled.img`
   width: 120px;
-  @media screen and (max-width: 768px) {
-    width: 80px;
+  @media screen and (max-width: 1023px) {
+    width: 92px;
   }
 
-  @media screen and (max-width: 375px) {
-    width: 60px;
+  @media screen and (max-width: 540px) {
+    width: 80px;
   }
 `;
