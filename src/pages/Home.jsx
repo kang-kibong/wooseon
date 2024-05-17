@@ -16,7 +16,7 @@ const Home = () => {
         <ServiceFlow />
         <ServiceEffect />
         <CompanyMarquee />
-        {/* <Guidance /> */}
+        <Guidance />
         {/* <FAQ /> */}
       </main>
       {/* <Footer /> */}
