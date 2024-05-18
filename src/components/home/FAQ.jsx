@@ -2,6 +2,9 @@ import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AccordionSummary from "@mui/material/AccordionSummary";
+import MuiAccordion from "@mui/material/Accordion";
+import MuiAccordionSummary from "@mui/material/AccordionSummary";
+import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Inner from "../common/Inner";
 import styled from "styled-components";
 
@@ -51,18 +54,22 @@ const FAQ = () => {
       <h2>우선 FAQ</h2>
       <Inner>
         {FAQData.map(({ question, answer }, index) => (
-          <Accordion key={index} style={{ boxShadow: "none" }}>
-            <AccordionSummary
+          <MuiAccordion
+            key={index}
+            style={{ boxShadow: "none" }}
+            disableGutters
+          >
+            <MuiAccordionSummary
               id={`panel-header-${index}`}
               aria-controls={`panel-content-${index}`}
               expandIcon={<ExpandMoreIcon sx={{ fontSize: "1.5rem" }} />}
             >
               <Question>{question}</Question>
-            </AccordionSummary>
-            <AccordionDetails style={{ backgroundColor: "#efefef" }}>
+            </MuiAccordionSummary>
+            <MuiAccordionDetails>
               <Answer>{answer}</Answer>
-            </AccordionDetails>
-          </Accordion>
+            </MuiAccordionDetails>
+          </MuiAccordion>
         ))}
       </Inner>
     </Layout>
@@ -75,14 +82,15 @@ const Layout = styled.section`
   padding: 120px 0 120px 0;
   white-space: pre-wrap;
   color: #292d32;
+
   h2 {
     font-size: 32px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 42px;
 
     @media screen and (max-width: 1023px) {
-      font-size: 38px;
+      font-size: 30px;
     }
 
     @media screen and (max-width: 540px) {
@@ -97,7 +105,7 @@ const Question = styled.strong`
 `;
 
 const Answer = styled.p`
-  line-height: 1.2;
+  line-height: 1.4;
   font-size: 14px;
   color: rgb(77, 85, 94);
 `;

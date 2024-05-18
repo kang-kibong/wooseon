@@ -13,9 +13,9 @@ const Home = () => {
       <Header />
       <main>
         <Catchphrase />
+        <CompanyMarquee />
         <ServiceFlow />
         <ServiceEffect />
-        <CompanyMarquee />
         <Guidance />
         <FAQ />
       </main>

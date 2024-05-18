@@ -43,16 +43,29 @@ const CompanyContainer = styled.div`
   flex-grow: 1;
   & img {
     width: 100px;
+    @media screen and (max-width: 1023px) {
+      width: 80px;
+    }
+
+    @media screen and (max-width: 540px) {
+      width: 60px;
+    }
   }
   margin-right: 24px;
 `;
 
 const CopyrightText = styled.p`
-  color: #333;
+  color: #929294;
   display: flex;
   flex-grow: 2;
 
-  @media screen and (max-width: 540px) {
+  font-size: 14px;
+
+  @media screen and (max-width: 1023px) {
     font-size: 12px;
+  }
+
+  @media screen and (max-width: 540px) {
+    font-size: 10px;
   }
 `;
