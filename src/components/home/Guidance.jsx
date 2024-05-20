@@ -77,7 +77,8 @@ const Description = styled.p`
   line-height: 1.5;
   font-size: 24px;
   white-space: pre-line;
-
+  color: #4d555e;
+  
   @media screen and (max-width: 1023px) {
     font-size: 22px;
   }
@@ -101,7 +102,7 @@ const Mentoring = styled.section`
   button {
     font-size: 20px;
     font-weight: 700;
-    
+
     @media screen and (max-width: 540px) {
       font-size: 16px;
       width: 150px;

@@ -29,7 +29,7 @@ const Layout = styled.section`
     font-size: 32px;
     font-weight: 700;
     line-height: 1.4;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 
     @media screen and (max-width: 1023px) {
       font-size: 38px;
@@ -43,7 +43,7 @@ const Layout = styled.section`
 
 const ImageContainer = styled.div`
   img {
-    width: 72px;
+    width: 100px;
     margin-right: 36px;
 
     @media screen and (max-width: 1023px) {

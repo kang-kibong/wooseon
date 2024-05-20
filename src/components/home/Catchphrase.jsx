@@ -97,7 +97,7 @@ const Layout = styled.section`
       font-size: 22px;
       line-height: 1.4;
       text-align: center;
-      margin-bottom: 24px;
+      margin-bottom: 64px;
     }
   }
 
@@ -111,6 +111,7 @@ const Layout = styled.section`
 
     p {
       font-size: 18px;
+      margin-bottom: 36px;
     }
   }
 `;
@@ -121,7 +122,7 @@ const DotText = styled.span`
 `;
 
 const Dot = styled.span`
-  color: #666cff;
+  color: #3182f6;
   position: absolute;
   top: -0.8em;
   left: 8px;
