@@ -25,10 +25,10 @@ const ServiceFlow = () => {
           <InnerCotainer>
             <TextContainer>
               <h2>
-                오직 <Strong>당신</Strong>만을 위한 멘토링
+                아직도 멘토를 <Strong>직접</Strong> 찾고 계신가요?
               </h2>
               <p>
-                {`가고싶은 회사는 많은데\n어떻게 가야할지감이 안오시나요?\n우선에서 여러분에\n`}
+                {`우선은 여러분에게\n`}
                 <Strong> 딱 맞는 멘토</Strong>
                 {`님들을 `}
                 <Strong>연결</Strong>
