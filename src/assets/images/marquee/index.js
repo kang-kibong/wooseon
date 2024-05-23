@@ -1,3 +1,7 @@
+import NAVER from "./NAVER.svg";
+import KAKAO from "./KAKAO.svg";
+import WOOWA from "./WOOWA.svg";
+import TOSS from "./TOSS.jpeg";
 import DB from "./DB.jpg";
 import KG from "./KG.jpg";
 import SM from "./SM.png";
@@ -47,6 +51,10 @@ import HR from "./HR.jpg";
 import HTJ from "./HTJ.jpg";
 
 const images = [
+  NAVER,
+  KAKAO,
+  TOSS,
+  WOOWA,
   DB,
   KG,
   SM,

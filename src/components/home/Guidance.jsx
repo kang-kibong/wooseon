@@ -22,10 +22,9 @@ const Guidance = () => {
       <ContentDiv ref={ref3} className={isInViewport3 ? "animation" : ""}>
         <Inner>
           <Mentoring>
-            <Title>멘토링 구하실건가요?</Title>
+            <Title>우선, 시작해볼까요?</Title>
             <Description>
-              알아서 찾아드릴게요.{"\n"}
-              멘토링은 이제{"\n"} 우선과 함께 하세요.
+              1분만에 스펙을 입력하고{`\n`} 멘토링을 받아보세요!
             </Description>
             <Button
               type="button"
