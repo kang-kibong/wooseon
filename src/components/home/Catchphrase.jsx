@@ -34,7 +34,7 @@ const Catchphrase = () => {
           </div>
           <Button
             type="button"
-            text="멘토링 무료로 시작하기"
+            text="멘토링 제안 받으러 가기"
             width="240"
             height="64"
             onClick={handleClick}
@@ -74,7 +74,7 @@ const Layout = styled.section`
     font-size: 51px;
     font-weight: 700;
     margin-bottom: 16px;
-    line-height: 1.7;
+    line-height: 1.8;
   }
 
   p {
@@ -90,8 +90,7 @@ const Layout = styled.section`
     h1 {
       font-size: 46px;
       margin-bottom: 12px;
-      line-height: 1.7;
-      margin-bottom: 18px;
+      margin-bottom: 64px;
       text-align: center;
     }
 
@@ -109,11 +108,12 @@ const Layout = styled.section`
 
     h1 {
       font-size: 28px;
+      margin-bottom: 48px;
     }
 
     p {
       font-size: 18px;
-      margin-bottom: 36px;
+      margin-bottom: 48px;
     }
   }
 `;
