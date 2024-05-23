@@ -59,6 +59,7 @@ const InnerContainer = styled.div`
 
   @media screen and (max-width: 540px) {
     flex-direction: column;
+    text-align: center;
   }
 `;
 

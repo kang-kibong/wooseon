@@ -25,7 +25,8 @@ const ServiceFlow = () => {
           <InnerCotainer>
             <TextContainer>
               <h2>
-                아직도 멘토를 <Strong>직접</Strong> 찾고 계신가요?
+                {`아직도 멘토를\n`}
+                <Strong>직접</Strong> 찾고 계신가요?
               </h2>
               <p>
                 {`우선은 여러분에게\n`}
@@ -94,6 +95,7 @@ const TextContainer = styled.div`
   h2 {
     font-size: 45px;
     font-weight: 700;
+    line-height: 1.4;
     margin-bottom: 24px;
 
     @media screen and (max-width: 1023px) {
