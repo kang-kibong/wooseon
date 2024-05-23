@@ -1,22 +1,21 @@
 import styled from "styled-components";
-import ReactGA from "react-ga4";
 import Button from "../common/Button";
 import Inner from "../common/Inner";
 import Arrow from "../../assets/images/arrow.png";
 import useIntersectionObsever from "../../hooks/useIntersectionObsever";
 import { useRef } from "react";
+import trackAndRedirect from "../../utils/trackAndRedirect";
+import { LINKS } from "../../utils/constants/links";
 
 const ServiceFlow = () => {
   const ref = useRef(null);
   const isInViewport = useIntersectionObsever(ref);
 
   const handleClick = () => {
-    const link = "https://forms.gle/1HVpvz1D6akNnCsi6";
-    ReactGA.event({
-      category: "ServiceFlow 섹션",
-      action: "버튼 클릭",
-    });
-    window.location.href = link;
+    const category = "Catchphrase 섹션";
+    const action = "버튼 클릭";
+
+    trackAndRedirect(LINKS.FORM, category, action);
   };
 
   return (

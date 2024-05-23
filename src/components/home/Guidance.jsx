@@ -1,21 +1,20 @@
-import ReactGA from "react-ga4";
 import styled from "styled-components";
 import Button from "../common/Button";
 import useIntersectionObsever from "../../hooks/useIntersectionObsever";
 import { useRef } from "react";
 import Inner from "../common/Inner";
+import trackAndRedirect from "../../utils/trackAndRedirect";
+import { LINKS } from "../../utils/constants/links";
 
 const Guidance = () => {
   const ref3 = useRef(null);
   const isInViewport3 = useIntersectionObsever(ref3);
 
   const handleClick = () => {
-    const link = "https://forms.gle/1HVpvz1D6akNnCsi6";
-    ReactGA.event({
-      category: "Guidance 섹션 버튼",
-      action: "버튼 클릭",
-    });
-    window.location.href = link;
+    const category = "Catchphrase 섹션";
+    const action = "버튼 클릭";
+
+    trackAndRedirect(LINKS.FORM, category, action);
   };
 
   return (
@@ -78,7 +77,7 @@ const Description = styled.p`
   font-size: 24px;
   white-space: pre-line;
   color: #4d555e;
-  
+
   @media screen and (max-width: 1023px) {
     font-size: 22px;
   }

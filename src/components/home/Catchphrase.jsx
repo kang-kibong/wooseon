@@ -1,16 +1,15 @@
 import styled from "styled-components";
 import { hyundai, kepco, samsung, sk } from "../../assets/images/companies";
-import ReactGA from "react-ga4";
 import Button from "../common/Button";
+import trackAndRedirect from "../../utils/trackAndRedirect";
+import { LINKS } from "../../utils/constants/links";
 
 const Catchphrase = () => {
   const handleClick = () => {
-    const link = "https://forms.gle/1HVpvz1D6akNnCsi6";
-    ReactGA.event({
-      category: "Catchphrase 섹션",
-      action: "버튼 클릭",
-    });
-    window.location.href = link;
+    const category = "Catchphrase 섹션";
+    const action = "버튼 클릭";
+
+    trackAndRedirect(LINKS.FORM, category, action);
   };
 
   return (
