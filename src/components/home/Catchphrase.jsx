@@ -84,36 +84,32 @@ const Layout = styled.section`
   }
 
   @media screen and (max-width: 1023px) {
-    padding-top: 80px;
-    height: 500px;
+    height: 100vh;
+    padding-top: 0;
+    text-align: center;
 
     h1 {
       font-size: 46px;
-      margin-bottom: 12px;
-      margin-bottom: 64px;
+      margin-bottom: 84px;
       text-align: center;
     }
 
     p {
       font-size: 22px;
       line-height: 1.4;
-      text-align: center;
-      margin-bottom: 64px;
+      margin-bottom: 84px;
     }
   }
 
   @media screen and (max-width: 540px) {
-    padding-top: 60px;
-    height: 350px;
-
     h1 {
       font-size: 28px;
-      margin-bottom: 48px;
+      margin-bottom: 64px;
     }
 
     p {
       font-size: 18px;
-      margin-bottom: 48px;
+      margin-bottom: 64px;
     }
   }
 `;
