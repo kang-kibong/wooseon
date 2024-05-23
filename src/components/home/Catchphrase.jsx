@@ -18,16 +18,19 @@ const Catchphrase = () => {
         <Description>
           <div>
             <h1>
-              {`원하는 기업의 멘토에게\n`}
+              {`가고싶은 기업의 멘토,\n저희가 `}
               <DotText>
-                <Dot>•</Dot>먼
+                <Dot>•</Dot>알
               </DotText>
               <DotText>
-                <Dot>•</Dot>저
+                <Dot>•</Dot>아
               </DotText>
-              {` 멘토링 제안을 받아보세요!`}
+              <DotText>
+                <Dot>•</Dot>서
+              </DotText>
+              {` 찾아드릴게요!`}
             </h1>
-            <p>{`가고싶은 기업의 멘토,\n저희가 알아서 찾아드릴게요!`}</p>
+            <p>{`원하는 기업의 멘토에게\n먼저 멘토링 제안을 받아보세요!`}</p>
           </div>
           <Button
             type="button"
