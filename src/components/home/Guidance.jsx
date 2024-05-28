@@ -11,7 +11,7 @@ const Guidance = () => {
   const isInViewport3 = useIntersectionObsever(ref3);
 
   const handleClick = () => {
-    const category = "Catchphrase 섹션";
+    const category = "Guidance 섹션";
     const action = "버튼 클릭";
 
     trackAndRedirect(LINKS.FORM, category, action);

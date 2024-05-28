@@ -12,7 +12,7 @@ const ServiceFlow = () => {
   const isInViewport = useIntersectionObsever(ref);
 
   const handleClick = () => {
-    const category = "Catchphrase 섹션";
+    const category = "ServiceFlow 섹션";
     const action = "버튼 클릭";
 
     trackAndRedirect(LINKS.FORM, category, action);
