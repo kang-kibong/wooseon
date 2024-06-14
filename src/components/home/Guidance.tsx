@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Button from "../common/Button";
-import useIntersectionObsever from "../../hooks/useIntersectionObsever";
+import useIntersectionObsever from "../../hooks/useIntersectionObsever.ts";
 import { useRef } from "react";
 import Inner from "../common/Inner";
 import trackAndRedirect from "../../utils/trackAndRedirect";

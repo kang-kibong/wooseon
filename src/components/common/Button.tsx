@@ -10,7 +10,7 @@ const Button = ({ type, text, width, height, onClick }) => {
 
 export default Button;
 
-const ButtonLayout = styled.button`
+const ButtonLayout = styled.button<{ width: string; height: string }>`
   box-sizing: border-box;
   display: flex;
   justify-content: center;

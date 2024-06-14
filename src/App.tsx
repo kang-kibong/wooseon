@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import RouteChangeTracker from "./components/RouteChangeTracker";
+import RouteChangeTracker from "./hooks/RouteChangeTracker";
 
 function App() {
   RouteChangeTracker();

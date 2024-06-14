@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Button from "../common/Button";
 import Inner from "../common/Inner";
 import Arrow from "../../assets/images/arrow.png";
-import useIntersectionObsever from "../../hooks/useIntersectionObsever";
+import useIntersectionObsever from "../../hooks/useIntersectionObsever.ts";
 import { useRef } from "react";
 import trackAndRedirect from "../../utils/trackAndRedirect";
 import { LINKS } from "../../utils/constants/links";
