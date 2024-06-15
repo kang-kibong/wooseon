@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import Inner from "../common/Inner";
 import Matching from "../../assets/images/matching.png";
-import useIntersectionObsever from "../../hooks/useIntersectionObserver";
+import useIntersectionObserver from "../../hooks/useIntersectionObserver";
 import { useRef } from "react";
 
 const ServiceEffect = () => {
   const ref = useRef(null);
-  const isInViewport = useIntersectionObsever(ref);
+  const isInViewport = useIntersectionObserver(ref);
 
   return (
     <Layout>
