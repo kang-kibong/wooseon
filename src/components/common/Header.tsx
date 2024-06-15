@@ -28,7 +28,7 @@ const Layout = styled.header`
   }
 
   @media screen and (max-width: 540px) {
-    height: 52px;
+    height: 56px;
   }
 `;
 
@@ -39,6 +39,6 @@ const Logo = styled.img`
   }
 
   @media screen and (max-width: 540px) {
-    width: 80px;
+    width: 92px;
   }
 `;
