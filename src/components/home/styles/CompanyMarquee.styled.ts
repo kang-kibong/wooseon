@@ -5,7 +5,7 @@ export const Layout = styled.section`
   background-color: #f2f8ff;
 
   @media screen and (max-width: 1023px) {
-    padding: 80px 16px 80px 16px;
+    padding: 80px 0px 80px 0px;
   }
 `;
 

@@ -24,6 +24,7 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-weight: 500;
   height: 550px;
 
   @media screen and (max-width: 1023px) {
