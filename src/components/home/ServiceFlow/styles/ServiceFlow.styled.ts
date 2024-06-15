@@ -1,23 +1,5 @@
 import styled from "styled-components";
 
-export const ContentDiv = styled.div`
-  &.animation {
-    animation-name: up;
-    animation-duration: 1500ms;
-
-    @keyframes up {
-      from {
-        opacity: 0;
-        transform: translateY(7%);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0%);
-      }
-    }
-  }
-`;
-
 export const Layout = styled.section`
   padding: 120px 0 120px 0;
   line-height: 44px;

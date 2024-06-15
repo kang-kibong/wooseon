@@ -1,16 +1,12 @@
 import Button from "../../common/Button";
-import useIntersectionObsever from "../../../hooks/useIntersectionObsever";
-import { useRef } from "react";
 import trackAndRedirect from "../../../utils/trackAndRedirect";
 import { LINKS } from "../../../utils/constants/links";
 import * as S from "./styles/ServiceFlow.styled";
 import Step from "./Step";
 import { STEPS } from "../../../utils/constants/steps";
+import InViewAnimation from "../../common/InViewAnimation";
 
 const ServiceFlow = () => {
-  const ref = useRef(null);
-  const isInViewport = useIntersectionObsever(ref);
-
   const handleClick = () => {
     const category = "ServiceFlow 섹션";
     const action = "버튼 클릭";
@@ -18,7 +14,7 @@ const ServiceFlow = () => {
   };
 
   return (
-    <S.ContentDiv ref={ref} className={isInViewport ? "animation" : ""}>
+    <InViewAnimation>
       <S.Layout>
         <S.InnerCotainer>
           <S.Title>
@@ -33,7 +29,6 @@ const ServiceFlow = () => {
               <Step key={id} number={id} text={text} />
             ))}
           </S.StepContainer>
-          ;
           <S.ButtonContainer>
             <Button
               type="button"
@@ -43,7 +38,7 @@ const ServiceFlow = () => {
           </S.ButtonContainer>
         </S.InnerCotainer>
       </S.Layout>
-    </S.ContentDiv>
+    </InViewAnimation>
   );
 };
 

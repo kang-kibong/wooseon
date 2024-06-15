@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Inner from "../common/Inner";
 import Matching from "../../assets/images/matching.png";
-import useIntersectionObsever from "../../hooks/useIntersectionObsever.ts";
+import useIntersectionObsever from "../../hooks/useIntersectionObserver";
 import { useRef } from "react";
 
 const ServiceEffect = () => {
