@@ -11,7 +11,6 @@ export const Layout = styled.header`
   display: flex;
   align-items: center;
   padding-left: 20px;
-  border-bottom: 1px solid rgba(0, 27, 55, 0.1);
   z-index: 9;
 
   @media screen and (max-width: 1023px) {
