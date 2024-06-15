@@ -14,8 +14,8 @@ const ServiceFlow = () => {
   };
 
   return (
-    <InViewAnimation>
-      <S.Layout>
+    <S.Layout>
+      <InViewAnimation>
         <S.InnerCotainer>
           <S.Title>
             아직도 멘토를
@@ -37,8 +37,8 @@ const ServiceFlow = () => {
             />
           </S.ButtonContainer>
         </S.InnerCotainer>
-      </S.Layout>
-    </InViewAnimation>
+      </InViewAnimation>
+    </S.Layout>
   );
 };
 

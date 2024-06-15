@@ -53,7 +53,7 @@ export const ButtonContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 51px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 16px;
   line-height: 1.8;
 

@@ -2,54 +2,54 @@ import styled from "styled-components";
 
 export const Layout = styled.section`
   padding: 120px 0 120px 0;
-  background-color: #f2f8ff;
 
   @media screen and (max-width: 1023px) {
-    padding: 80px 0px 80px 0px;
+    padding: 80px 0 80px 0;
   }
 `;
 
 export const Title = styled.h1`
-  text-align: center;
   font-size: 36px;
   font-weight: 800;
-  line-height: 44px;
-  margin-bottom: 48px;
+  text-align: center;
+  margin-bottom: 52px;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 36px;
+  }
 
   @media screen and (max-width: 540px) {
     font-size: 28px;
+    margin-bottom: 40px;
   }
 `;
 
-export const ImageContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background-color: #fff;
-  width: 125px;
-  height: 125px;
-  margin-right: 20px;
+export const Question = styled.strong`
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 12px 0;
 
   @media screen and (max-width: 1023px) {
-    width: 100px;
-    height: 100px;
+    font-size: 18px;
+    padding: 8px 0;
   }
 
   @media screen and (max-width: 540px) {
-    width: 88px;
-    height: 88px;
+    font-size: 16px;
   }
 `;
 
-export const Image = styled.img`
-  width: 64px;
+export const Answer = styled.p`
+  line-height: 1.4;
+  font-size: 18px;
+  color: rgb(77, 85, 94);
 
   @media screen and (max-width: 1023px) {
-    width: 56px;
+    font-size: 16px;
   }
 
   @media screen and (max-width: 540px) {
-    width: 48px;
+    font-size: 14px;
   }
 `;

@@ -30,7 +30,7 @@ export const InnerCotainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 16px;
 
   @media screen and (max-width: 540px) {

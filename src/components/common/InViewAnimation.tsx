@@ -6,11 +6,8 @@ interface InViewAnimationProps {
   children: ReactNode;
 }
 
-const InViewAnimation = ({
-  children,
-  ...props
-}: InViewAnimationProps) => {
-  const ref = useRef(null);
+const InViewAnimation = ({ children, ...props }: InViewAnimationProps) => {
+  const ref = useRef<HTMLDivElement>(null);
   const isInViewport = useIntersectionObserver(ref);
 
   return (

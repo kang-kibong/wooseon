@@ -1,6 +1,7 @@
+import { ReactNode } from "react";
 import styled from "styled-components";
 
-const Inner = ({ children }) => {
+const Inner = ({ children }: { children: ReactNode }) => {
   return <Container>{children}</Container>;
 };
 
@@ -11,10 +12,10 @@ const Container = styled.div`
   margin: 0 auto;
 
   @media screen and (max-width: 1023px) {
-    max-width: 800px;
+    padding: 0 32px;
   }
 
   @media screen and (max-width: 540px) {
-    max-width: 350px;
+    padding: 0 16px;
   }
 `;
