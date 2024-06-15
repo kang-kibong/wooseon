@@ -1,6 +1,6 @@
-import * as S from "./styles/Footer.styled";
-import CompanyLogo from "../../assets/images/day&night.png";
-import Inner from "./Inner";
+import * as S from "./Footer.styled";
+import CompanyLogo from "../../../assets/images/day&night.png";
+import Inner from "../Inner/Inner";
 
 const Footer = () => {
   return (

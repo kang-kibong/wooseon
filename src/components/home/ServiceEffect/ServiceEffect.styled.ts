@@ -1,44 +1,6 @@
 import styled from "styled-components";
-import Inner from "../common/Inner";
-import Matching from "../../assets/images/matching.png";
-import useIntersectionObserver from "../../hooks/useIntersectionObserver";
-import { useRef } from "react";
 
-const ServiceEffect = () => {
-  const ref = useRef(null);
-  const isInViewport = useIntersectionObserver(ref);
-
-  return (
-    <Layout>
-      <Inner>
-        <InnerContainer>
-          <TextContainer>
-            <h2>
-              {`가고 싶은 기업이 있나요?\n`}
-              <Strong>우선</Strong>
-              {`이 도와드릴게요!`}
-            </h2>
-            <p>
-              {`50명 이상의 멘토님들이 당신을 기다리고 있어요!\n당신에게 `}
-              <Strong>딱 맞는 멘토링!</Strong>
-              {`\n우선이 보여드릴게요!`}
-            </p>
-          </TextContainer>
-          <ContentDiv ref={ref} className={isInViewport ? "animation" : ""}>
-            <ImageContainer>
-              <img src={Matching} alt="" />
-              <Opacity />
-            </ImageContainer>
-          </ContentDiv>
-        </InnerContainer>
-      </Inner>
-    </Layout>
-  );
-};
-
-export default ServiceEffect;
-
-const Layout = styled.section`
+export const Layout = styled.section`
   padding: 120px 0 120px 0;
   white-space: pre;
   color: #292d32;
@@ -52,7 +14,7 @@ const Layout = styled.section`
   }
 `;
 
-const InnerContainer = styled.div`
+export const InnerContainer = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -63,7 +25,7 @@ const InnerContainer = styled.div`
   }
 `;
 
-const ImageContainer = styled.div`
+export const ImageContainer = styled.div`
   position: relative;
   img {
     width: 375px;
@@ -85,7 +47,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const Opacity = styled.div`
+export const Opacity = styled.div`
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -96,7 +58,7 @@ const Opacity = styled.div`
   );
 `;
 
-const TextContainer = styled.div`
+export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,12 +94,12 @@ const TextContainer = styled.div`
   }
 `;
 
-const Strong = styled.strong`
+export const Strong = styled.strong`
   color: #3182f6;
   font-weight: 700;
 `;
 
-const ContentDiv = styled.div`
+export const ContentDiv = styled.div`
   &.animation {
     animation-name: up;
     animation-duration: 1500ms;

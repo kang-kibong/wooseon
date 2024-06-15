@@ -1,6 +1,6 @@
 import Marquee from "react-fast-marquee";
-import marqueeImages from "../../assets/images/marquee";
-import * as S from "./styles/CompanyMarquee.styled";
+import marqueeImages from "../../../assets/images/marquee";
+import * as S from "./CompanyMarquee.styled";
 
 const CompanyMarquee = () => {
   return (

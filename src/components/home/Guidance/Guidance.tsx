@@ -1,8 +1,7 @@
-import Button from "../common/Button";
-import trackAndRedirect from "../../utils/trackAndRedirect";
-import { LINKS } from "../../utils/constants/links";
-import InViewAnimation from "../common/InViewAnimation";
-import * as S from "./styles/Guidance.styled";
+import trackAndRedirect from "../../../utils/trackAndRedirect";
+import { LINKS } from "../../../utils/constants/links";
+import { InViewAnimation, Button } from "../../common";
+import * as S from "./Guidance.styled";
 
 const Guidance = () => {
   const handleClick = () => {

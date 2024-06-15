@@ -1,4 +1,4 @@
-import * as S from "./styles/Step.styled";
+import * as S from "./Step.styled";
 
 interface StepProps {
   number: number;

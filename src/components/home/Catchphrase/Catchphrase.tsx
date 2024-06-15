@@ -1,8 +1,8 @@
-import * as S from "./styles/Catchphrase.styled";
-import Button from "../common/Button";
-import trackAndRedirect from "../../utils/trackAndRedirect";
-import { LINKS } from "../../utils/constants/links";
-import { COMPANIES } from "../../utils/constants/companies";
+import * as S from "./Catchphrase.styled";
+import { Button } from "../../common";
+import trackAndRedirect from "../../../utils/trackAndRedirect";
+import { LINKS } from "../../../utils/constants/links";
+import { COMPANIES } from "../../../utils/constants/companies";
 
 const Catchphrase = () => {
   const handleClick = () => {

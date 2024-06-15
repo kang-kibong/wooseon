@@ -1,5 +1,5 @@
-import * as S from "./styles/Header.styled";
-import LogoImage from "../../assets/images/wooseon-logo.svg";
+import * as S from "./Header.styled";
+import LogoImage from "../../../assets/images/wooseon-logo.svg";
 
 const Header = () => {
   return (

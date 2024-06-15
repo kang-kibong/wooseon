@@ -1,10 +1,9 @@
-import Button from "../../common/Button";
 import trackAndRedirect from "../../../utils/trackAndRedirect";
 import { LINKS } from "../../../utils/constants/links";
-import * as S from "./styles/ServiceFlow.styled";
-import Step from "./Step";
+import * as S from "./ServiceFlow.styled";
+import Step from "./Step/Step";
 import { STEPS } from "../../../utils/constants/steps";
-import InViewAnimation from "../../common/InViewAnimation";
+import { InViewAnimation, Button } from "../../common";
 
 const ServiceFlow = () => {
   const handleClick = () => {
