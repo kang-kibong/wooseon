@@ -15,20 +15,18 @@ const Catchphrase = () => {
     <S.Layout>
       <S.Inner>
         <S.Description>
-          <div>
-            <S.Title>
-              가고싶은 기업의 멘토
-              <br />
-              저희가
-              <S.Strong> 알아서 </S.Strong>
-              찾아드릴게요!
-            </S.Title>
-            <S.Paragraph>
-              원하는 기업의 멘토에게
-              <br />
-              먼저 멘토링 제안을 받아보세요!
-            </S.Paragraph>
-          </div>
+          <S.Title>
+            가고싶은 기업의 멘토
+            <br />
+            저희가
+            <S.Strong> 알아서 </S.Strong>
+            찾아드릴게요!
+          </S.Title>
+          <S.Paragraph>
+            원하는 기업의 멘토에게
+            <br />
+            먼저 멘토링 제안을 받아보세요!
+          </S.Paragraph>
           <S.ButtonContainer>
             <Button
               type="button"

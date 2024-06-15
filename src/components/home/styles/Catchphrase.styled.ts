@@ -24,7 +24,6 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-weight: 500;
   height: 550px;
 
   @media screen and (max-width: 1023px) {
@@ -94,20 +93,16 @@ export const Paragraph = styled.p`
 export const ImageContainer = styled.div`
   width: 500px;
   position: relative;
+
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 `;
 
 export const Image = styled.div`
   position: absolute;
   img {
     width: 200px;
-
-    @media screen and (max-width: 1023px) {
-      display: none;
-    }
-
-    @media screen and (max-width: 540px) {
-      display: none;
-    }
   }
 
   @keyframes motion {
