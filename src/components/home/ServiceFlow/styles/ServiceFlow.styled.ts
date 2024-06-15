@@ -5,7 +5,7 @@ export const Layout = styled.section`
   line-height: 44px;
   text-align: center;
 
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 1030px) {
     padding: 80px 0 80px 0;
   }
 `;
@@ -69,6 +69,7 @@ export const StepContainer = styled.div`
   }
 
   @media screen and (max-width: 540px) {
+    max-width: 100%;
     padding: 0 32px;
   }
 `;
