@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
-export const Layout = styled.section`
-  padding: 80px 0 80px 0;
-  background-color: #1d1d27;
+export const Layout = styled.section<{ backgroundImage: string }>`
+  padding: 250px 0 250px 0;
+  /* background-color: #1d1d27; */
+  background-image: url(${({ backgroundImage }) => backgroundImage});
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
 
+  @media screen and (max-width: 1023px) {
+    padding: 150px 0 150px 0;
+  }
+
   @media screen and (max-width: 540px) {
-    padding: 52px 0 52px 0;
+    padding: 120px 0 120px 0;
   }
 `;
 
