@@ -1,4 +1,4 @@
-import { Header, Footer } from "../components/common";
+import { Header, Footer } from "@components/common";
 import {
   Catchphrase,
   ServiceFlow,
@@ -6,7 +6,7 @@ import {
   CompanyMarquee,
   Guidance,
   FAQ,
-} from "../components/home";
+} from "@components/home";
 
 const Home = () => {
   return (

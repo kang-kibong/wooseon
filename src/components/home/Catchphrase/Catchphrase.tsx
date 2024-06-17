@@ -1,13 +1,13 @@
 import * as S from "./Catchphrase.styled";
-import { Button } from "../../common";
-import { trackEventAndRedirect } from "../../../utils/trackEventAndRedirect";
-import { LINKS } from "../../../utils/constants/links";
-import catchphrazeVideo from "../../../assets/videos/catchphraze.mp4";
-import firstFrame from "../../../assets/images/first_frame.jpg";
+import { Button } from "@components/common";
+import { trackEventAndRedirect } from "@utils/trackEventAndRedirect";
+import { LINKS } from "@utils/constants/links";
+import catchphrazeVideo from "@assets/videos/catchphraze.mp4";
+import firstFrame from "@assets/images/first_frame.jpg";
 
 const Catchphrase = () => {
   const handleClick = () => {
-    const category = "Catchphrase 섹션";
+    const category = "Catchphrse 섹션";
     const action = "버튼 클릭";
     trackEventAndRedirect(LINKS.FORM, category, action);
   };

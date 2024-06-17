@@ -1,5 +1,5 @@
 import * as S from "./ServiceEffect.styled";
-import { InViewAnimation } from "../../common";
+import { InViewAnimation } from "@components/common";
 import MentorProfileSlider from "./MentorProfileSlider/MentorProfileSlider";
 
 const ServiceEffect = () => {

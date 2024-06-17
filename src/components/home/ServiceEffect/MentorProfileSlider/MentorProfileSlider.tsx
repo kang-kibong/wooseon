@@ -1,7 +1,7 @@
 import { useMediaQuery } from "react-responsive";
-import { getSliderSettings } from "../../../../utils/getSliderSettings";
+import { getSliderSettings } from "@/utils/getSliderSettings";
 import Slider from "react-slick";
-import { mentorList } from "../../../../utils/constants/mentorList";
+import { mentorList } from "@/utils/constants/mentorList";
 import MentorProfile from "../MentorProfile/MentorProfile";
 import * as S from "./MentorProfileSlider.styled";
 

@@ -1,7 +1,7 @@
-import { trackEventAndRedirect } from "../../../utils/trackEventAndRedirect";
-import { LINKS } from "../../../utils/constants/links";
-import { InViewAnimation, Button } from "../../common";
-import $image from "../../../assets/images/woman.jpg";
+import { trackEventAndRedirect } from "@utils/trackEventAndRedirect";
+import { LINKS } from "@utils/constants/links";
+import { InViewAnimation, Button } from "@components/common";
+import $image from "@assets/images/woman.jpg";
 import * as S from "./Guidance.styled";
 
 const Guidance = () => {

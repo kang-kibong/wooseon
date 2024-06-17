@@ -2,9 +2,9 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import { Inner } from "../../common/";
+import { Inner } from "@components/common/";
 import * as S from "./FAQ.styled";
-import { FAQS } from "../../../utils/constants/faqs";
+import { FAQS } from "@utils/constants/faqs";
 
 const FAQ = () => {
   return (

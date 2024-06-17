@@ -1,4 +1,4 @@
-import { hyundai, kepco, samsung, sk } from "../../assets/images/companies";
+import { hyundai, kepco, samsung, sk } from "@assets/images/companies";
 
 export const COMPANIES = [
   {

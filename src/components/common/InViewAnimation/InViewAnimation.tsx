@@ -1,6 +1,6 @@
 import { ReactNode, useRef } from "react";
 import * as S from "./InViewAnimation.styled";
-import useIntersectionObserver from "../../../hooks/useIntersectionObserver";
+import useIntersectionObserver from "@hooks/useIntersectionObserver";
 
 const InViewAnimation = ({ children, ...props }: { children: ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);

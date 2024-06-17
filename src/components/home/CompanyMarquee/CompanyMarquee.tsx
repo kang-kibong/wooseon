@@ -1,7 +1,7 @@
 import Marquee from "react-fast-marquee";
-import marqueeImages from "../../../assets/images/marquee";
+import marqueeImages from "@/assets/images/marquee";
 import * as S from "./CompanyMarquee.styled";
-import { InViewAnimation } from "../../common";
+import { InViewAnimation } from "@components/common";
 
 const CompanyMarquee = () => {
   return (
