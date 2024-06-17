@@ -29,33 +29,33 @@ export const InnerCotainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 36px;
+  font-size: ${({ theme }) => theme.fontSize.d_h2};
   font-weight: 800;
   margin-bottom: 16px;
 
   @media screen and (max-width: 540px) {
-    font-size: 28px;
+    font-size: ${({ theme }) => theme.fontSize.m_h1};
   }
 `;
 
 export const Description = styled.p`
-  font-size: 24px;
+  font-size: ${({ theme }) => theme.fontSize.d_p};
   margin-bottom: 56px;
   font-weight: 500;
   color: #5f5f5f;
 
   @media screen and (max-width: 1023px) {
-    font-size: 22px;
+    font-size: ${({ theme }) => theme.fontSize.t_p};
   }
 
   @media screen and (max-width: 540px) {
-    font-size: 18px;
+    font-size: ${({ theme }) => theme.fontSize.m_p};
     margin-bottom: 48px;
   }
 `;
 
 export const Strong = styled.strong`
-  color: #007aff;
+  color: ${({ theme }) => theme.pallete.blue};
 `;
 
 export const StepContainer = styled.div`

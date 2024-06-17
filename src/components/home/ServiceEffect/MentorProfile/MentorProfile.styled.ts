@@ -85,7 +85,7 @@ export const SpecList = styled.ul`
 export const SpecListItem = styled.li`
   line-height: 20px;
   background-color: #f7f9fb;
-  color: rgba(16, 61, 108, 1);
+  color: ${({ theme }) => theme.pallete.navy};
   border-radius: 8px;
   font-weight: 500;
   padding: 12px 18px;

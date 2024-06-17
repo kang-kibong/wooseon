@@ -7,7 +7,6 @@ const pallete = {
   "light--black": "#1D1D27",
   navy: "rgba(16, 61, 108, 1)",
   white: "#fff",
-  
 };
 
 const fontSize = {
