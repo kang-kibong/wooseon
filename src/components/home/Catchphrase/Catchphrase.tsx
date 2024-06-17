@@ -17,7 +17,7 @@ const Catchphrase = () => {
       <S.BackgroundVideo>
         <S.VideoContent muted loop autoPlay playsInline poster={firstFrame}>
           <source src={catchphrazeVideo} type="video/mp4" />
-          Your browser is not supported!
+          Your browser is not supp`orted!
         </S.VideoContent>
       </S.BackgroundVideo>
       <S.Description>

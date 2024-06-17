@@ -1,6 +1,6 @@
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
-const trackAndRedirect = (link, category, action) => {
+const trackAndRedirect = (link: string, category: string, action: string) => {
   ReactGA.event({
     category: category,
     action: action,
