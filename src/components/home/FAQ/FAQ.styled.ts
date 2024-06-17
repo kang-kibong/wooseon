@@ -43,6 +43,7 @@ export const Question = styled.strong`
 export const Answer = styled.p`
   line-height: 1.4;
   font-size: 18px;
+  white-space: pre-line;
   color: rgb(77, 85, 94);
 
   @media screen and (max-width: 1023px) {
