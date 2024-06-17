@@ -43,8 +43,10 @@ export const Strong = styled.strong`
   color: #007aff;
 `;
 
-export const MentorContainer = styled.div`
+export const MentorProfileContainer = styled.div`
+  /* display: flex; */
+
   @media screen and (max-width: 540px) {
-    padding: 20px 0px;
+    gap: 12px;
   }
 `;

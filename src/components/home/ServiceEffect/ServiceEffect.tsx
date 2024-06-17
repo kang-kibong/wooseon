@@ -1,17 +1,49 @@
 import * as S from "./ServiceEffect.styled";
 import { InViewAnimation } from "../../common";
 import Slider from "react-slick";
+import MentorProfile from "./MentorProfile/MentorProfile";
+
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+};
+
+const mentorList = [
+  {
+    id: 1,
+    image: "",
+    company: "Kakao",
+    job: "백엔드 엔지니어",
+    specList: ["7년차", "충남대 컴공과 졸업", "Kotlin", "Gradle", "Kubernetes"],
+  },
+  {
+    id: 2,
+    image: "",
+    company: "Kakao",
+    job: "백엔드 엔지니어",
+    specList: ["7년차", "충남대 컴공과 졸업", "Kotlin", "Gradle", "Kubernetes"],
+  },
+  {
+    id: 3,
+    image: "",
+    company: "Kakao",
+    job: "백엔드 엔지니어",
+    specList: ["7년차", "충남대 컴공과 졸업", "Kotlin", "Gradle", "Kubernetes"],
+  },
+  {
+    id: 4,
+    image: "",
+    company: "Kakao",
+    job: "백엔드 엔지니어",
+    specList: ["7년차", "충남대 컴공과 졸업", "Kotlin", "Gradle", "Kubernetes"],
+  },
+];
 
 const ServiceEffect = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  };
-
   return (
     <S.Layout>
       <InViewAnimation>
@@ -23,22 +55,9 @@ const ServiceEffect = () => {
           </S.Title>
           <S.Description>50명 이상의 멘토님들이 기다리고 있어요.</S.Description>
         </div>
-        <div>
-          <div>
-            <div>Avatar</div>
-            <div>
-              <h2>Kakao</h2>
-              <p>백엔드 엔지니어</p>
-            </div>
-            <ul>
-              <li>7년차</li>
-              <li>충남대 컴공과 졸업</li>
-              <li>Kotlin</li>
-              <li>Gradle</li>
-              <li>Kubernetes</li>
-            </ul>
-          </div>
-        </div>
+        {mentorList.map(({ id, image, company, job, specList }) => (
+          <MentorProfile key={id} {...{ image, company, job, specList }} />
+        ))}
       </InViewAnimation>
     </S.Layout>
   );
