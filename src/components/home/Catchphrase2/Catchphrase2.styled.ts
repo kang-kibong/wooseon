@@ -4,8 +4,8 @@ export const Layout = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 900px;
-  margin-top: 60px;
+  height: 800px;
+
   @media screen and (max-width: 1023px) {
     height: 750px;
   }
@@ -13,7 +13,6 @@ export const Layout = styled.section`
   @media screen and (max-width: 540px) {
     height: 530px;
   }
-  /* padding: 180px 0px 120px 0px; */
 `;
 
 export const BackgroundVideo = styled.div`
