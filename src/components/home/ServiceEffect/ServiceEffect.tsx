@@ -68,8 +68,8 @@ const ServiceEffect = () => {
       <S.SliderContainer>
         <Slider {...settings}>
           {mentorList.map(({ id, image, company, job, specList }) => (
-            <div>
-              <MentorProfile key={id} {...{ image, company, job, specList }} />
+            <div key={id}>
+              <MentorProfile {...{ image, company, job, specList }} />
             </div>
           ))}
         </Slider>
