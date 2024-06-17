@@ -1,17 +1,8 @@
 import * as S from "./ServiceEffect.styled";
 import { InViewAnimation } from "../../common";
-import Slider from "react-slick";
-import MentorProfile from "./MentorProfile/MentorProfile";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { useMediaQuery } from "react-responsive";
-import { getSliderSettings } from "../../../utils/getSliderSettings";
-import { mentorList } from "../../../utils/constants/mentorList";
+import MentorProfileSlider from "./MentorProfileSlider/MentorProfileSlider";
 
 const ServiceEffect = () => {
-  const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
-  const sliderSettings = getSliderSettings(isDesktopOrLaptop);
-
   return (
     <S.Layout>
       <InViewAnimation>
@@ -24,15 +15,7 @@ const ServiceEffect = () => {
           <S.Description>50명 이상의 멘토님들이 기다리고 있어요.</S.Description>
         </div>
       </InViewAnimation>
-      <S.SliderContainer>
-        <Slider {...sliderSettings}>
-          {mentorList.map(({ id, image, company, job, specList }) => (
-            <div key={id}>
-              <MentorProfile {...{ image, company, job, specList }} />
-            </div>
-          ))}
-        </Slider>
-      </S.SliderContainer>
+      <MentorProfileSlider />
     </S.Layout>
   );
 };
