@@ -35,61 +35,61 @@ export const Description = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 51px;
+  font-size: ${({ theme }) => theme.fontSize.d_h1};
   font-weight: 700;
   text-align: center;
   margin-bottom: 24px;
   line-height: 1.4;
-  color: #fff;
+  color: ${({ theme }) => theme.pallete.white};
 
   @media screen and (max-width: 1023px) {
-    font-size: 36px;
+    font-size: ${({ theme }) => theme.fontSize.t_h1};
   }
 
   @media screen and (max-width: 540px) {
     margin-bottom: 16px;
-    font-size: 28px;
+    font-size: ${({ theme }) => theme.fontSize.m_h1};
     line-height: 44px;
   }
 `;
 
 export const Strong = styled.strong`
-  color: #007aff;
+  color: ${({ theme }) => theme.pallete.blue};
 `;
 
 export const Paragraph = styled.p`
-  font-size: 24px;
+  font-size: ${({ theme }) => theme.fontSize.d_p};
   line-height: 1.5;
-  color: #fff;
+  color: ${({ theme }) => theme.pallete.white};
   text-align: center;
   margin-bottom: 56px;
 
   @media screen and (max-width: 1023px) {
-    font-size: 22px;
+    font-size: ${({ theme }) => theme.fontSize.t_p};
   }
 
   @media screen and (max-width: 540px) {
-    font-size: 18px;
+    font-size: ${({ theme }) => theme.fontSize.m_p};
   }
 `;
 
 export const ButtonContainer = styled.div`
   button {
     margin: 0 auto;
-    font-size: 24px;
+    font-size: ${({ theme }) => theme.fontSize.d_p};
     width: 250px;
     height: 64px;
 
     @media screen and (max-width: 1023px) {
       width: 220px;
       height: 58px;
-      font-size: 22px;
+      font-size: ${({ theme }) => theme.fontSize.t_p};
     }
 
     @media screen and (max-width: 540px) {
       width: 200px;
       height: 48px;
-      font-size: 18px;
+      font-size: ${({ theme }) => theme.fontSize.m_p};
     }
   }
 `;
