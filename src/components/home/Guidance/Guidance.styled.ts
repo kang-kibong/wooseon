@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const Layout = styled.section<{ backgroundImage: string }>`
+export const Layout = styled.section<{ $image: string }>`
   padding: 250px 0 250px 0;
   /* background-color: #1d1d27; */
-  background-image: url(${({ backgroundImage }) => backgroundImage});
+  background-image: url(${({ $image }) => $image});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

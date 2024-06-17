@@ -55,7 +55,6 @@ export const Description = styled.p`
 
 export const Strong = styled.strong`
   color: #007aff;
-  font-weight: 700;
 `;
 
 export const StepContainer = styled.div`

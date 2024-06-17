@@ -22,7 +22,7 @@ const ServiceFlow = () => {
             <S.Strong>직접 </S.Strong>
             찾고 계신가요?
           </S.Title>
-          <S.Description>당신에게 딱 맞는 멘토님을 연결해드려요</S.Description>
+          <S.Description>당신에게 딱 맞는 멘토님을 연결해드려요.</S.Description>
           <S.StepContainer>
             {STEPS.map(({ id, text }) => (
               <Step key={id} number={id} text={text} />

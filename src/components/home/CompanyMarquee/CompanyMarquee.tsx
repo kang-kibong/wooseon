@@ -1,15 +1,18 @@
 import Marquee from "react-fast-marquee";
 import marqueeImages from "../../../assets/images/marquee";
 import * as S from "./CompanyMarquee.styled";
+import { InViewAnimation } from "../../common";
 
 const CompanyMarquee = () => {
   return (
     <S.Layout>
-      <S.Title>
-        많은 기업들의 멘토분들이
-        <br />
-        기다리고 있어요.
-      </S.Title>
+      <InViewAnimation>
+        <S.Title>
+          많은 기업들의 멘토분들이
+          <br />
+          기다리고 있어요.
+        </S.Title>
+      </InViewAnimation>
       <Marquee>
         {marqueeImages.map((image, index) => (
           <S.ImageContainer key={index}>

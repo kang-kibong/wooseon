@@ -1,7 +1,7 @@
 import trackAndRedirect from "../../../utils/trackAndRedirect";
 import { LINKS } from "../../../utils/constants/links";
 import { InViewAnimation, Button } from "../../common";
-import backgroundImage from "../../../assets/images/woman.jpg";
+import $image from "../../../assets/images/woman.jpg";
 import * as S from "./Guidance.styled";
 
 const Guidance = () => {
@@ -12,7 +12,7 @@ const Guidance = () => {
   };
 
   return (
-    <S.Layout backgroundImage={backgroundImage}>
+    <S.Layout {...{ $image }}>
       <InViewAnimation>
         <S.Inner>
           <S.Title>우선, 시작해볼까요?</S.Title>

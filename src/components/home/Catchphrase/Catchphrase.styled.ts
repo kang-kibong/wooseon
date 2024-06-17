@@ -4,19 +4,21 @@ export const Layout = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
+  padding: 180px 0px 120px 0px;
+
+  @media screen and (max-width: 1023px) {
+    padding: 176px 0px 120px 0px;
+  }
 `;
 
 export const Inner = styled.div`
   display: flex;
   justify-content: center;
-  padding: 60px 24px 60px 24px;
 
   @media screen and (max-width: 1023px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 120px 16px 120px 16px;
   }
 `;
 
@@ -24,6 +26,7 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-weight: 500;
   height: 550px;
 
   @media screen and (max-width: 1023px) {
@@ -53,9 +56,9 @@ export const ButtonContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 51px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 16px;
-  line-height: 1.8;
+  line-height: 1.4;
 
   @media screen and (max-width: 1023px) {
     font-size: 36px;
@@ -69,7 +72,6 @@ export const Title = styled.h1`
   }
 `;
 
-// primary color
 export const Strong = styled.strong`
   color: #007aff;
 `;
@@ -101,6 +103,7 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.div`
   position: absolute;
+
   img {
     width: 200px;
   }
