@@ -3,6 +3,7 @@ import { Button } from "../../common";
 import trackAndRedirect from "../../../utils/trackAndRedirect";
 import { LINKS } from "../../../utils/constants/links";
 import catchphrazeVideo from "../../../assets/videos/catchphraze.mp4";
+import firstFrame from "../../../assets/images/first_frame.jpg";
 
 const Catchphrase2 = () => {
   const handleClick = () => {
@@ -14,7 +15,7 @@ const Catchphrase2 = () => {
   return (
     <S.Layout>
       <S.BackgroundVideo>
-        <S.VideoContent muted loop autoPlay playsInline>
+        <S.VideoContent muted loop autoPlay playsInline poster={firstFrame}>
           <source src={catchphrazeVideo} type="video/mp4" />
           Your browser is not supported!
         </S.VideoContent>
