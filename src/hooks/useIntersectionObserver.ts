@@ -13,7 +13,7 @@ const useIntersectionObserver = (targetRef: React.RefObject<Element>) => {
           });
         },
         {
-          threshold: 0.1,
+          threshold: 0,
         }
       );
     }

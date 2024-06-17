@@ -5,6 +5,7 @@ import MentorProfile from "./MentorProfile/MentorProfile";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from "react-responsive";
+import { getSliderSettings } from "../../../utils/getSliderSettings";
 
 const mentorList = [
   {
@@ -39,20 +40,7 @@ const mentorList = [
 
 const ServiceEffect = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
-
-  const settings = {
-    className: "center",
-    centerPadding: "20px",
-    dots: false,
-    centerMode: true,
-    infinite: true,
-    speed: 700,
-    swipe: false,
-    arrows: false,
-    autoplay: true,
-    slidesToShow: isDesktopOrLaptop ? 2 : 1,
-    autoplaySpeed: 3000,
-  };
+  const sliderSettings = getSliderSettings(isDesktopOrLaptop);
 
   return (
     <S.Layout>
@@ -67,7 +55,7 @@ const ServiceEffect = () => {
         </div>
       </InViewAnimation>
       <S.SliderContainer>
-        <Slider {...settings}>
+        <Slider {...sliderSettings}>
           {mentorList.map(({ id, image, company, job, specList }) => (
             <div key={id}>
               <MentorProfile {...{ image, company, job, specList }} />

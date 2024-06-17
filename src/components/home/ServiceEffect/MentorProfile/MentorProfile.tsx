@@ -24,8 +24,8 @@ const MentorProfile = ({
         </S.Info>
       </S.InfoContainer>
       <S.SpecList>
-        {specList.map((spec) => (
-          <S.SpecListItem>{spec}</S.SpecListItem>
+        {specList.map((spec, index) => (
+          <S.SpecListItem key={index}>{spec}</S.SpecListItem>
         ))}
       </S.SpecList>
     </S.Layout>
