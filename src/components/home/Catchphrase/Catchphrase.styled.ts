@@ -4,69 +4,50 @@ export const Layout = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 180px 0px 120px 0px;
+  height: 800px;
 
   @media screen and (max-width: 1023px) {
-    padding: 176px 0px 120px 0px;
+    height: 750px;
+  }
+
+  @media screen and (max-width: 540px) {
+    height: 530px;
   }
 `;
 
-export const Inner = styled.div`
-  display: flex;
-  justify-content: center;
+export const BackgroundVideo = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+`;
 
-  @media screen and (max-width: 1023px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+export const VideoContent = styled.video`
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 `;
 
 export const Description = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   font-weight: 500;
-  height: 550px;
-
-  @media screen and (max-width: 1023px) {
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-`;
-
-export const ButtonContainer = styled.div`
-  button {
-    font-size: 24px;
-    width: 250px;
-    height: 64px;
-
-    @media screen and (max-width: 1023px) {
-      width: 100%;
-      height: 100%;
-      font-size: 22px;
-    }
-
-    @media screen and (max-width: 540px) {
-      font-size: 18px;
-    }
-  }
 `;
 
 export const Title = styled.h1`
   font-size: 51px;
   font-weight: 700;
-  margin-bottom: 16px;
+  text-align: center;
+  margin-bottom: 24px;
   line-height: 1.4;
+  color: #fff;
 
   @media screen and (max-width: 1023px) {
     font-size: 36px;
-    text-align: center;
   }
 
   @media screen and (max-width: 540px) {
-    padding-top: 0;
+    margin-bottom: 16px;
     font-size: 28px;
     line-height: 44px;
   }
@@ -79,12 +60,12 @@ export const Strong = styled.strong`
 export const Paragraph = styled.p`
   font-size: 24px;
   line-height: 1.5;
-  color: rgb(77, 85, 94);
+  color: #fff;
+  text-align: center;
+  margin-bottom: 56px;
 
   @media screen and (max-width: 1023px) {
-    text-align: center;
     font-size: 22px;
-    margin-bottom: 56px;
   }
 
   @media screen and (max-width: 540px) {
@@ -92,71 +73,23 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const ImageContainer = styled.div`
-  width: 500px;
-  position: relative;
+export const ButtonContainer = styled.div`
+  button {
+    margin: 0 auto;
+    font-size: 24px;
+    width: 250px;
+    height: 64px;
 
-  @media screen and (max-width: 1023px) {
-    display: none;
-  }
-`;
-
-export const Image = styled.div`
-  position: absolute;
-
-  img {
-    width: 200px;
-  }
-
-  @keyframes motion {
-    0% {
-      margin-top: 0px;
+    @media screen and (max-width: 1023px) {
+      width: 220px;
+      height: 58px;
+      font-size: 22px;
     }
-    100% {
-      margin-top: 5px;
+
+    @media screen and (max-width: 540px) {
+      width: 200px;
+      height: 48px;
+      font-size: 18px;
     }
-  }
-
-  @keyframes reverse-motion {
-    0% {
-      margin-top: 5px;
-    }
-    100% {
-      margin-top: 0px;
-    }
-  }
-
-  &:first-child {
-    top: 40%;
-    left: -10%;
-    animation: motion 0.8s infinite alternate;
-  }
-
-  &:nth-child(2) {
-    top: 55%;
-    left: 35%;
-    animation: reverse-motion 0.8s infinite alternate;
-  }
-
-  &:nth-child(3) {
-    top: 65%;
-    left: -15%;
-    animation: reverse-motion 0.8s infinite alternate;
-  }
-
-  &:nth-child(4) {
-    img {
-      width: 270px;
-      @media screen and (max-width: 1023px) {
-        width: 200px;
-      }
-
-      @media screen and (max-width: 540px) {
-        width: 15px;
-      }
-    }
-    top: 75%;
-    left: 40%;
-    animation: motion 0.8s infinite alternate;
   }
 `;
