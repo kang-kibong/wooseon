@@ -1,4 +1,4 @@
-import trackAndRedirect from "../../../utils/trackAndRedirect";
+import { trackEventAndRedirect } from "../../../utils/trackEventAndRedirect";
 import { LINKS } from "../../../utils/constants/links";
 import * as S from "./ServiceFlow.styled";
 import Step from "./Step/Step";
@@ -9,7 +9,7 @@ const ServiceFlow = () => {
   const handleClick = () => {
     const category = "ServiceFlow 섹션";
     const action = "버튼 클릭";
-    trackAndRedirect(LINKS.FORM, category, action);
+    trackEventAndRedirect(LINKS.FORM, category, action);
   };
 
   return (

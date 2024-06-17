@@ -4,8 +4,8 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import { Inner } from "../../common/";
 import * as S from "./FAQ.styled";
-
 import { FAQS } from "../../../utils/constants/faqs";
+
 const FAQ = () => {
   return (
     <S.Layout>

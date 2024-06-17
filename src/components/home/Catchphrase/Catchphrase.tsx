@@ -1,6 +1,6 @@
 import * as S from "./Catchphrase.styled";
 import { Button } from "../../common";
-import trackAndRedirect from "../../../utils/trackAndRedirect";
+import { trackEventAndRedirect } from "../../../utils/trackEventAndRedirect";
 import { LINKS } from "../../../utils/constants/links";
 import catchphrazeVideo from "../../../assets/videos/catchphraze.mp4";
 import firstFrame from "../../../assets/images/first_frame.jpg";
@@ -9,7 +9,7 @@ const Catchphrase = () => {
   const handleClick = () => {
     const category = "Catchphrase 섹션";
     const action = "버튼 클릭";
-    trackAndRedirect(LINKS.FORM, category, action);
+    trackEventAndRedirect(LINKS.FORM, category, action);
   };
 
   return (

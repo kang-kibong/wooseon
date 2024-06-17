@@ -4,6 +4,7 @@ import RouteChangeTracker from "./hooks/RouteChangeTracker";
 
 function App() {
   RouteChangeTracker();
+  
   return (
     <Routes>
       <Route path="/" element={<Home />}></Route>

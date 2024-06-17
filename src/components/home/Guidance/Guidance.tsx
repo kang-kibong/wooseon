@@ -1,4 +1,4 @@
-import trackAndRedirect from "../../../utils/trackAndRedirect";
+import { trackEventAndRedirect } from "../../../utils/trackEventAndRedirect";
 import { LINKS } from "../../../utils/constants/links";
 import { InViewAnimation, Button } from "../../common";
 import $image from "../../../assets/images/woman.jpg";
@@ -8,7 +8,7 @@ const Guidance = () => {
   const handleClick = () => {
     const category = "Guidance 섹션";
     const action = "버튼 클릭";
-    trackAndRedirect(LINKS.FORM, category, action);
+    trackEventAndRedirect(LINKS.FORM, category, action);
   };
 
   return (
