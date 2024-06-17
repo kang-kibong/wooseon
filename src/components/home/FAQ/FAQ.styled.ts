@@ -9,17 +9,17 @@ export const Layout = styled.section`
 `;
 
 export const Title = styled.h1`
-  font-size: 36px;
+  font-size: ${({ theme }) => theme.fontSize.d_h2};
   font-weight: 800;
   text-align: center;
   margin-bottom: 52px;
 
   @media screen and (max-width: 1023px) {
-    font-size: 36px;
+    font-size: ${({ theme }) => theme.fontSize.t_h1};
   }
 
   @media screen and (max-width: 540px) {
-    font-size: 28px;
+    font-size: ${({ theme }) => theme.fontSize.m_h1};
     margin-bottom: 40px;
   }
 `;
