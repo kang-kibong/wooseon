@@ -27,15 +27,15 @@ export const Description = styled.p`
   color: #5f5f5f;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 90px;
+  margin-bottom: 56px;
 
   @media screen and (max-width: 1023px) {
     font-size: 22px;
-    margin-bottom: 76px;
   }
 
   @media screen and (max-width: 540px) {
     font-size: 18px;
+    margin-bottom: 48px;
   }
 `;
 
@@ -43,10 +43,33 @@ export const Strong = styled.strong`
   color: #007aff;
 `;
 
-export const MentorProfileContainer = styled.div`
-  /* display: flex; */
+export const SliderContainer = styled.div`
+  margin: 0 auto;
+
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+  .center {
+    height: 250px;
+  }
+
+  .center .slick-center > div > div > div {
+    padding: 20px 24px;
+  }
+
+  @media screen and (max-width: 1023px) {
+    .center .slick-center > div > div > div {
+      padding: 23px 28px;
+    }
+  }
 
   @media screen and (max-width: 540px) {
-    gap: 12px;
+    .center .slick-center > div > div > div {
+      @media screen and (max-width: 540px) {
+        padding: 20px 24px;
+      }
+    }
   }
 `;

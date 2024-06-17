@@ -50,6 +50,7 @@ export const Description = styled.p`
 
   @media screen and (max-width: 540px) {
     font-size: 18px;
+    margin-bottom: 48px;
   }
 `;
 
