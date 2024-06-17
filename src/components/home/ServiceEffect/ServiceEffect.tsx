@@ -6,37 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useMediaQuery } from "react-responsive";
 import { getSliderSettings } from "../../../utils/getSliderSettings";
-
-const mentorList = [
-  {
-    id: 1,
-    image: "",
-    company: "Kakao",
-    job: "백엔드 엔지니어",
-    specList: ["7년차", "충남대 컴공과 졸업", "Kotlin", "Gradle", "Kubernetes"],
-  },
-  {
-    id: 2,
-    image: "",
-    company: "Kakao",
-    job: "백엔드 엔지니어",
-    specList: ["7년차", "충남대 컴공과 졸업", "Kotlin", "Gradle", "Kubernetes"],
-  },
-  {
-    id: 3,
-    image: "",
-    company: "Kakao",
-    job: "백엔드 엔지니어",
-    specList: ["7년차", "충남대 컴공과 졸업", "Kotlin", "Gradle", "Kubernetes"],
-  },
-  {
-    id: 4,
-    image: "",
-    company: "Kakao",
-    job: "백엔드 엔지니어",
-    specList: ["7년차", "충남대 컴공과 졸업", "Kotlin", "Gradle", "Kubernetes"],
-  },
-];
+import { mentorList } from "../../../utils/constants/mentorList";
 
 const ServiceEffect = () => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1024px)" });
