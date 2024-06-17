@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Step = styled.li`
   display: flex;
   align-items: center;
-  background-color: #f2f8ff;
+  background-color: ${({ theme }) => theme.pallete["light-blue"]};
   border-radius: 8px;
   padding: 16px 20px;
   margin-bottom: 36px;
@@ -27,10 +27,10 @@ export const StepNumber = styled.div`
   align-items: center;
   width: 28px;
   height: 28px;
-  background-color: #007aff;
+  background-color: ${({ theme }) => theme.pallete.blue};
   border-radius: 50%;
   font-size: 16px;
-  color: #fff;
+  color: ${({ theme }) => theme.pallete.white};
   margin-right: 12px;
 `;
 
