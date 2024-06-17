@@ -9,7 +9,7 @@ export const Layout = styled.div`
   padding: 16px 19px;
   margin-left: 14px;
   margin-right: 14px;
-  transition: padding 0.8s;
+  transition: all 0.8s;
 
   @media screen and (max-width: 1023px) {
     margin-left: 12px;
@@ -95,6 +95,6 @@ export const SpecListItem = styled.li`
   }
 
   @media screen and (max-width: 540px) {
-    padding: 8px 10px;
+    padding: 8px 9px;
   }
 `;

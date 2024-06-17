@@ -69,6 +69,7 @@ export const SliderContainer = styled.div`
     .center .slick-center > div > div > div {
       @media screen and (max-width: 540px) {
         padding: 20px 24px;
+        /* padding: 18px 22px; */
       }
     }
   }

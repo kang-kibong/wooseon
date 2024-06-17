@@ -70,7 +70,7 @@ export const StepContainer = styled.div`
 
   @media screen and (max-width: 540px) {
     max-width: 100%;
-    padding: 0 32px;
+    padding: 0 16px;
   }
 `;
 

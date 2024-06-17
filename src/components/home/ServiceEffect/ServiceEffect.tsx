@@ -42,6 +42,7 @@ const ServiceEffect = () => {
 
   const settings = {
     className: "center",
+    centerPadding: "20px",
     dots: false,
     centerMode: true,
     infinite: true,
