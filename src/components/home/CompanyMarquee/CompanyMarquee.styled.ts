@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Layout = styled.section`
   padding: 120px 0 120px 0;
-  background-color: #f2f8ff;
+  background-color: ${({ theme }) => theme.pallete["light-blue"]};
 
   @media screen and (max-width: 1023px) {
     padding: 80px 0px 80px 0px;
@@ -11,13 +11,13 @@ export const Layout = styled.section`
 
 export const Title = styled.h1`
   text-align: center;
-  font-size: 36px;
+  font-size: ${({ theme }) => theme.fontSize.d_h2};
   font-weight: 800;
   line-height: 44px;
   margin-bottom: 48px;
 
   @media screen and (max-width: 540px) {
-    font-size: 28px;
+    font-size: ${({ theme }) => theme.fontSize.m_h1};
   }
 `;
 
@@ -26,7 +26,7 @@ export const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.pallete.white};
   width: 125px;
   height: 125px;
   margin-right: 20px;
