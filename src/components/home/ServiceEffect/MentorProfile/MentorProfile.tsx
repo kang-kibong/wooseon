@@ -17,7 +17,9 @@ const MentorProfile = ({
   return (
     <S.Layout {...props}>
       <S.InfoContainer>
-        <S.Avatar>{image}</S.Avatar>
+        <S.Avatar>
+          <S.Image src={image} alt={company} />
+        </S.Avatar>
         <S.Info>
           <h2>{company}</h2>
           <p>{job}</p>
