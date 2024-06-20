@@ -5,6 +5,7 @@ const pallete = {
   "light-blue": "#F2F8FF",
   gray: "#5F5F5F",
   "light--black": "#1D1D27",
+  "light--gray": "#efefef",
   navy: "rgba(16, 61, 108, 1)",
   white: "#fff",
 };

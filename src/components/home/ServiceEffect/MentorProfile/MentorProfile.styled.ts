@@ -37,9 +37,12 @@ export const InfoContainer = styled.div`
 `;
 
 export const Avatar = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   margin-right: 20px;
-  background-color: rgba(255, 232, 18, 1);
+  border: 1px solid ${({ theme }) => theme.pallete["light--gray"]};
   width: 86px;
   height: 86px;
 
@@ -52,6 +55,10 @@ export const Avatar = styled.div`
     width: 60px;
     height: 60px;
   }
+`;
+
+export const Image = styled.img`
+  width: 70%;
 `;
 
 export const Info = styled.div`
