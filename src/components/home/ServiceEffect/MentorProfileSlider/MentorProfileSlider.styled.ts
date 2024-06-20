@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 export const SliderContainer = styled.div`
-  /* margin: 0 auto; */
-
   .slick-slider {
-    /* width: 100%; */
     overflow: hidden;
   }
 
@@ -14,7 +11,7 @@ export const SliderContainer = styled.div`
   }
 
   .center {
-    height: 250px;
+    min-height: 250px;
   }
 
   .center .slick-center > div > div > div {
