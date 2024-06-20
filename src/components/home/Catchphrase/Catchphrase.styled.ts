@@ -54,7 +54,17 @@ export const Title = styled.h1`
 `;
 
 export const Strong = styled.strong`
-  color: ${({ theme }) => theme.pallete.blue};
+  display: inline-block;
+  margin: 0 6px;
+  padding: 0 6px;
+  background-color: ${({ theme }) => theme.pallete.blue};
+  color: #fff;
+  border-radius: 4px;
+
+  @media screen and (max-width: 540px) {
+    margin: 0 4px;
+    padding: 0 4px;
+  }
 `;
 
 export const Paragraph = styled.p`

@@ -26,7 +26,7 @@ const Catchphrase = () => {
             가고싶은 기업의 멘토
             <br />
             저희가
-            <S.Strong> 알아서 </S.Strong>
+            <S.Strong>알아서</S.Strong>
             찾아드릴게요!
           </S.Title>
           <S.Paragraph>
