@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.section`
   padding: 120px 0 120px 0;
@@ -6,7 +6,7 @@ export const Layout = styled.section`
   @media screen and (max-width: 1023px) {
     padding: 80px 0 80px 0;
   }
-`;
+`
 
 export const Title = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.d_h2};
@@ -22,7 +22,7 @@ export const Title = styled.h1`
     font-size: ${({ theme }) => theme.fontSize.m_h1};
     margin-bottom: 40px;
   }
-`;
+`
 
 export const Question = styled.strong`
   font-size: 20px;
@@ -38,7 +38,7 @@ export const Question = styled.strong`
   @media screen and (max-width: 540px) {
     font-size: 16px;
   }
-`;
+`
 
 export const Answer = styled.p`
   line-height: 1.4;
@@ -53,4 +53,4 @@ export const Answer = styled.p`
   @media screen and (max-width: 540px) {
     font-size: 14px;
   }
-`;
+`

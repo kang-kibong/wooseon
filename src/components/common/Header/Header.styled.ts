@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.header`
   position: fixed;
@@ -17,7 +17,7 @@ export const Layout = styled.header`
     height: 56px;
     padding-left: 20px;
   }
-`;
+`
 
 export const Logo = styled.img`
   width: 120px;
@@ -25,4 +25,4 @@ export const Logo = styled.img`
   @media screen and (max-width: 1023px) {
     width: 92px;
   }
-`;
+`

@@ -1,7 +1,7 @@
-import Marquee from "react-fast-marquee";
-import marqueeImages from "@/assets/images/marquee";
-import * as S from "./CompanyMarquee.styled";
-import { InViewAnimation } from "@components/common";
+import Marquee from 'react-fast-marquee'
+import marqueeImages from '@/assets/images/marquee'
+import * as S from './CompanyMarquee.styled'
+import { InViewAnimation } from '@components/common'
 
 const CompanyMarquee = () => {
   return (
@@ -21,7 +21,7 @@ const CompanyMarquee = () => {
         ))}
       </Marquee>
     </S.Layout>
-  );
-};
+  )
+}
 
-export default CompanyMarquee;
+export default CompanyMarquee

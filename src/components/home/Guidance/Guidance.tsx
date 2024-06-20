@@ -1,15 +1,15 @@
-import { trackEventAndRedirect } from "@utils/trackEventAndRedirect";
-import { LINKS } from "@utils/constants/links";
-import { InViewAnimation, Button } from "@components/common";
-import $image from "@assets/images/woman.jpg";
-import * as S from "./Guidance.styled";
+import { trackEventAndRedirect } from '@utils/trackEventAndRedirect'
+import { LINKS } from '@utils/constants/links'
+import { InViewAnimation, Button } from '@components/common'
+import $image from '@assets/images/woman.jpg'
+import * as S from './Guidance.styled'
 
 const Guidance = () => {
   const handleClick = () => {
-    const category = "Guidance 섹션";
-    const action = "버튼 클릭";
-    trackEventAndRedirect(LINKS.FORM, category, action);
-  };
+    const category = 'Guidance 섹션'
+    const action = '버튼 클릭'
+    trackEventAndRedirect(LINKS.FORM, category, action)
+  }
 
   return (
     <S.Layout {...{ $image }}>
@@ -29,7 +29,7 @@ const Guidance = () => {
         </S.Inner>
       </InViewAnimation>
     </S.Layout>
-  );
-};
+  )
+}
 
-export default Guidance;
+export default Guidance

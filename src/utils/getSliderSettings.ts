@@ -1,6 +1,6 @@
 export const getSliderSettings = (isDesktopOrLaptop: boolean) => ({
-  className: "center",
-  centerPadding: "20px",
+  className: 'center',
+  centerPadding: '20px',
   dots: false,
   centerMode: true,
   infinite: true,
@@ -10,4 +10,4 @@ export const getSliderSettings = (isDesktopOrLaptop: boolean) => ({
   autoplay: true,
   slidesToShow: isDesktopOrLaptop ? 2 : 1,
   autoplaySpeed: 3000,
-});
+})

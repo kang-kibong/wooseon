@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   max-width: 1140px;
@@ -11,4 +11,4 @@ export const Container = styled.div`
   @media screen and (max-width: 540px) {
     padding: 0 16px;
   }
-`;
+`

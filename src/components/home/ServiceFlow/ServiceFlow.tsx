@@ -1,16 +1,16 @@
-import { trackEventAndRedirect } from "@utils/trackEventAndRedirect";
-import { LINKS } from "@utils/constants/links";
-import * as S from "./ServiceFlow.styled";
-import Step from "./Step/Step";
-import { STEPS } from "@utils/constants/steps";
-import { InViewAnimation, Button } from "@components/common";
+import { trackEventAndRedirect } from '@utils/trackEventAndRedirect'
+import { LINKS } from '@utils/constants/links'
+import * as S from './ServiceFlow.styled'
+import Step from './Step/Step'
+import { STEPS } from '@utils/constants/steps'
+import { InViewAnimation, Button } from '@components/common'
 
 const ServiceFlow = () => {
   const handleClick = () => {
-    const category = "ServiceFlow 섹션";
-    const action = "버튼 클릭";
-    trackEventAndRedirect(LINKS.FORM, category, action);
-  };
+    const category = 'ServiceFlow 섹션'
+    const action = '버튼 클릭'
+    trackEventAndRedirect(LINKS.FORM, category, action)
+  }
 
   return (
     <S.Layout>
@@ -38,7 +38,7 @@ const ServiceFlow = () => {
         </S.InnerCotainer>
       </InViewAnimation>
     </S.Layout>
-  );
-};
+  )
+}
 
-export default ServiceFlow;
+export default ServiceFlow

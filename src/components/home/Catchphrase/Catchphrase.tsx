@@ -1,16 +1,16 @@
-import * as S from "./Catchphrase.styled";
-import { Button } from "@components/common";
-import { trackEventAndRedirect } from "@utils/trackEventAndRedirect";
-import { LINKS } from "@utils/constants/links";
-import catchphrazeVideo from "@assets/videos/catchphraze.mp4";
-import firstFrame from "@assets/images/first_frame.jpg";
+import * as S from './Catchphrase.styled'
+import { Button } from '@components/common'
+import { trackEventAndRedirect } from '@utils/trackEventAndRedirect'
+import { LINKS } from '@utils/constants/links'
+import catchphrazeVideo from '@assets/videos/catchphraze.mp4'
+import firstFrame from '@assets/images/first_frame.jpg'
 
 const Catchphrase = () => {
   const handleClick = () => {
-    const category = "Catchphrse 섹션";
-    const action = "버튼 클릭";
-    trackEventAndRedirect(LINKS.FORM, category, action);
-  };
+    const category = 'Catchphrse 섹션'
+    const action = '버튼 클릭'
+    trackEventAndRedirect(LINKS.FORM, category, action)
+  }
 
   return (
     <S.Layout>
@@ -40,7 +40,7 @@ const Catchphrase = () => {
         </S.ButtonContainer>
       </S.Description>
     </S.Layout>
-  );
-};
+  )
+}
 
-export default Catchphrase;
+export default Catchphrase

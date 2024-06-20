@@ -1,6 +1,6 @@
-import * as S from "./Footer.styled";
-import CompanyLogo from "@assets/images/day&night.png";
-import Inner from "../Inner/Inner";
+import * as S from './Footer.styled'
+import CompanyLogo from '@assets/images/day&night.png'
+import Inner from '../Inner/Inner'
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
         </S.Container>
       </Inner>
     </S.Layout>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

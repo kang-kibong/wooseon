@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const SliderContainer = styled.div`
   .slick-slider {
@@ -31,4 +31,4 @@ export const SliderContainer = styled.div`
       }
     }
   }
-`;
+`

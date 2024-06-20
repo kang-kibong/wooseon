@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.section`
   display: flex;
@@ -13,7 +13,7 @@ export const Layout = styled.section`
   @media screen and (max-width: 540px) {
     height: 530px;
   }
-`;
+`
 
 export const BackgroundVideo = styled.div`
   position: absolute;
@@ -22,17 +22,17 @@ export const BackgroundVideo = styled.div`
   height: 100%;
   width: 100%;
   z-index: -1;
-`;
+`
 
 export const VideoContent = styled.video`
   height: 100%;
   width: 100%;
   object-fit: cover;
-`;
+`
 
 export const Description = styled.div`
   font-weight: 500;
-`;
+`
 
 export const Title = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.d_h1};
@@ -51,7 +51,7 @@ export const Title = styled.h1`
     font-size: ${({ theme }) => theme.fontSize.m_h1};
     line-height: 44px;
   }
-`;
+`
 
 export const Strong = styled.strong`
   display: inline-block;
@@ -65,7 +65,7 @@ export const Strong = styled.strong`
     margin: 0 4px;
     padding: 0 4px;
   }
-`;
+`
 
 export const Paragraph = styled.p`
   font-size: ${({ theme }) => theme.fontSize.d_p};
@@ -81,7 +81,7 @@ export const Paragraph = styled.p`
   @media screen and (max-width: 540px) {
     font-size: ${({ theme }) => theme.fontSize.m_p};
   }
-`;
+`
 
 export const ButtonContainer = styled.div`
   button {
@@ -102,4 +102,4 @@ export const ButtonContainer = styled.div`
       font-size: ${({ theme }) => theme.fontSize.m_p};
     }
   }
-`;
+`

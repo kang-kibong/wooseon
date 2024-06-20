@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.section`
   padding: 120px 0 120px 0;
@@ -8,7 +8,7 @@ export const Layout = styled.section`
   @media screen and (max-width: 1030px) {
     padding: 80px 0 80px 0;
   }
-`;
+`
 
 export const InnerCotainer = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ export const InnerCotainer = styled.div`
       height: 46px;
     }
   }
-`;
+`
 
 export const Title = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.d_h2};
@@ -36,7 +36,7 @@ export const Title = styled.h1`
   @media screen and (max-width: 540px) {
     font-size: ${({ theme }) => theme.fontSize.m_h1};
   }
-`;
+`
 
 export const Description = styled.p`
   font-size: ${({ theme }) => theme.fontSize.d_p};
@@ -52,11 +52,11 @@ export const Description = styled.p`
     font-size: ${({ theme }) => theme.fontSize.m_p};
     margin-bottom: 48px;
   }
-`;
+`
 
 export const Strong = styled.strong`
   color: ${({ theme }) => theme.pallete.blue};
-`;
+`
 
 export const StepContainer = styled.div`
   box-sizing: border-box;
@@ -72,7 +72,7 @@ export const StepContainer = styled.div`
     max-width: 100%;
     padding: 0 16px;
   }
-`;
+`
 
 export const ButtonContainer = styled.div`
   button {
@@ -89,4 +89,4 @@ export const ButtonContainer = styled.div`
       font-size: 18px;
     }
   }
-`;
+`

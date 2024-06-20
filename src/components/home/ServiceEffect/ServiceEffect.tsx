@@ -1,6 +1,6 @@
-import * as S from "./ServiceEffect.styled";
-import { InViewAnimation } from "@components/common";
-import MentorProfileSlider from "./MentorProfileSlider/MentorProfileSlider";
+import * as S from './ServiceEffect.styled'
+import { InViewAnimation } from '@components/common'
+import MentorProfileSlider from './MentorProfileSlider/MentorProfileSlider'
 
 const ServiceEffect = () => {
   return (
@@ -17,7 +17,7 @@ const ServiceEffect = () => {
       </InViewAnimation>
       <MentorProfileSlider />
     </S.Layout>
-  );
-};
+  )
+}
 
-export default ServiceEffect;
+export default ServiceEffect

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.footer`
   white-space: pre;
@@ -10,13 +10,13 @@ export const Layout = styled.footer`
   height: 92px;
   background-color: #fff;
   border-top: 1px solid rgba(0, 27, 55, 0.1);
-`;
+`
 
 export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const CompanyContainer = styled.div`
   flex-grow: 1;
@@ -31,7 +31,7 @@ export const CompanyContainer = styled.div`
     }
   }
   margin-right: 24px;
-`;
+`
 
 export const CopyrightText = styled.p`
   color: #929294;
@@ -47,4 +47,4 @@ export const CopyrightText = styled.p`
   @media screen and (max-width: 540px) {
     font-size: 10px;
   }
-`;
+`

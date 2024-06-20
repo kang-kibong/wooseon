@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.div`
   border-radius: 16px;
@@ -20,7 +20,7 @@ export const Layout = styled.div`
     margin-left: 6px;
     margin-right: 6px;
   }
-`;
+`
 
 export const InfoContainer = styled.div`
   display: flex;
@@ -34,7 +34,7 @@ export const InfoContainer = styled.div`
   @media screen and (max-width: 540px) {
     margin-bottom: 20px;
   }
-`;
+`
 
 export const Avatar = styled.div`
   display: flex;
@@ -42,7 +42,7 @@ export const Avatar = styled.div`
   align-items: center;
   border-radius: 50%;
   margin-right: 20px;
-  border: 1px solid ${({ theme }) => theme.pallete["light--gray"]};
+  border: 1px solid ${({ theme }) => theme.pallete['light--gray']};
   width: 86px;
   height: 86px;
 
@@ -55,11 +55,11 @@ export const Avatar = styled.div`
     width: 60px;
     height: 60px;
   }
-`;
+`
 
 export const Image = styled.img`
   width: 70%;
-`;
+`
 
 export const Info = styled.div`
   font-weight: 600;
@@ -73,7 +73,7 @@ export const Info = styled.div`
   @media screen and (max-width: 540px) {
     font-size: 20px;
   }
-`;
+`
 
 export const SpecList = styled.ul`
   display: flex;
@@ -87,7 +87,7 @@ export const SpecList = styled.ul`
   @media screen and (max-width: 540px) {
     gap: 8px;
   }
-`;
+`
 
 export const SpecListItem = styled.li`
   line-height: 20px;
@@ -104,4 +104,4 @@ export const SpecListItem = styled.li`
   @media screen and (max-width: 540px) {
     padding: 8px 9px;
   }
-`;
+`

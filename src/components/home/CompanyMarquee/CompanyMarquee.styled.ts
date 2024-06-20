@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.section`
   padding: 120px 0 120px 0;
-  background-color: ${({ theme }) => theme.pallete["light-blue"]};
+  background-color: ${({ theme }) => theme.pallete['light-blue']};
 
   @media screen and (max-width: 1023px) {
     padding: 80px 0px 80px 0px;
   }
-`;
+`
 
 export const Title = styled.h1`
   text-align: center;
@@ -19,7 +19,7 @@ export const Title = styled.h1`
   @media screen and (max-width: 540px) {
     font-size: ${({ theme }) => theme.fontSize.m_h1};
   }
-`;
+`
 
 export const ImageContainer = styled.div`
   display: flex;
@@ -40,7 +40,7 @@ export const ImageContainer = styled.div`
     width: 88px;
     height: 88px;
   }
-`;
+`
 
 export const Image = styled.img`
   width: 64px;
@@ -52,4 +52,4 @@ export const Image = styled.img`
   @media screen and (max-width: 540px) {
     width: 48px;
   }
-`;
+`

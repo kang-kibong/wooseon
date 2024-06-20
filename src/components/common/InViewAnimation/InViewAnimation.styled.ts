@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.div`
   will-change: transform, opacity;
@@ -19,4 +19,4 @@ export const Layout = styled.div`
       }
     }
   }
-`;
+`

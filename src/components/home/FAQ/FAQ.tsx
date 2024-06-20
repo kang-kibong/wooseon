@@ -1,10 +1,10 @@
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MuiAccordion from "@mui/material/Accordion";
-import MuiAccordionSummary from "@mui/material/AccordionSummary";
-import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import { Inner } from "@components/common/";
-import * as S from "./FAQ.styled";
-import { FAQS } from "@utils/constants/faqs";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import MuiAccordion from '@mui/material/Accordion'
+import MuiAccordionSummary from '@mui/material/AccordionSummary'
+import MuiAccordionDetails from '@mui/material/AccordionDetails'
+import { Inner } from '@components/common/'
+import * as S from './FAQ.styled'
+import { FAQS } from '@utils/constants/faqs'
 
 const FAQ = () => {
   return (
@@ -12,11 +12,11 @@ const FAQ = () => {
       <S.Title>자주하는 질문</S.Title>
       <Inner>
         {FAQS.map(({ id, question, answer }) => (
-          <MuiAccordion key={id} style={{ boxShadow: "none" }} disableGutters>
+          <MuiAccordion key={id} style={{ boxShadow: 'none' }} disableGutters>
             <MuiAccordionSummary
               id={`panel-header-${id}`}
               aria-controls={`panel-content-${id}`}
-              expandIcon={<ExpandMoreIcon sx={{ fontSize: "1.5rem" }} />}
+              expandIcon={<ExpandMoreIcon sx={{ fontSize: '1.5rem' }} />}
             >
               <S.Question>{question}</S.Question>
             </MuiAccordionSummary>
@@ -27,7 +27,7 @@ const FAQ = () => {
         ))}
       </Inner>
     </S.Layout>
-  );
-};
+  )
+}
 
-export default FAQ;
+export default FAQ

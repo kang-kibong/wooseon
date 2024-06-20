@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Layout = styled.section<{ $image: string }>`
   padding: 250px 0 250px 0;
@@ -15,14 +15,14 @@ export const Layout = styled.section<{ $image: string }>`
   @media screen and (max-width: 540px) {
     padding: 120px 0 120px 0;
   }
-`;
+`
 
 export const Inner = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const Title = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.d_h1};
@@ -38,7 +38,7 @@ export const Title = styled.h1`
   @media screen and (max-width: 540px) {
     font-size: ${({ theme }) => theme.fontSize.m_h1};
   }
-`;
+`
 
 export const Description = styled.p`
   font-size: ${({ theme }) => theme.fontSize.d_p};
@@ -54,7 +54,7 @@ export const Description = styled.p`
     font-size: ${({ theme }) => theme.fontSize.m_p};
     margin-bottom: 28px;
   }
-`;
+`
 
 export const ButtonContainer = styled.div`
   button {
@@ -64,4 +64,4 @@ export const ButtonContainer = styled.div`
       font-size: 16px;
     }
   }
-`;
+`

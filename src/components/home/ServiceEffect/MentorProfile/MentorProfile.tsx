@@ -1,10 +1,10 @@
-import * as S from "./MentorProfile.styled";
+import * as S from './MentorProfile.styled'
 
 interface MetorProfileProps {
-  image: string;
-  company: string;
-  job: string;
-  specList: string[];
+  image: string
+  company: string
+  job: string
+  specList: string[]
 }
 
 const MentorProfile = ({
@@ -31,7 +31,7 @@ const MentorProfile = ({
         ))}
       </S.SpecList>
     </S.Layout>
-  );
-};
+  )
+}
 
-export default MentorProfile;
+export default MentorProfile

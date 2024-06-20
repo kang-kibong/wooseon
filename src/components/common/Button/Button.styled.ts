@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 // primary color
 export const Layout = styled.button`
@@ -24,4 +24,4 @@ export const Layout = styled.button`
   &:hover {
     background-color: #1957c2;
   }
-`;
+`

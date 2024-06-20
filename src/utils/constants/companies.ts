@@ -1,20 +1,20 @@
-import { hyundai, kepco, samsung, sk } from "@/assets/images/mentor-companies";
+import { hyundai, kepco, samsung, sk } from '@/assets/images/mentor-companies'
 
 export const COMPANIES = [
   {
     src: sk,
-    alt: "sk",
+    alt: 'sk',
   },
   {
     src: samsung,
-    alt: "samsung",
+    alt: 'samsung',
   },
   {
     src: hyundai,
-    alt: "hyndai",
+    alt: 'hyndai',
   },
   {
     src: kepco,
-    alt: "kepco",
+    alt: 'kepco',
   },
-];
+]
