@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const SliderContainer = styled.div`
+  height: 350px;
+
   .slick-slider {
     overflow: hidden;
   }
