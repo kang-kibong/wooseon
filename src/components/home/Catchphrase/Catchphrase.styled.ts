@@ -57,7 +57,7 @@ export const Strong = styled.strong`
   display: inline-block;
   margin: 0 6px;
   padding: 0 6px;
-  background-color: ${({ theme }) => theme.pallete.blue};
+  background-color: rgba(66, 135, 245, 0.65);
   color: #fff;
   border-radius: 4px;
 

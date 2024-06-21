@@ -8,7 +8,7 @@
     "build": "vite build",
     "format": "prettier --write --cache .",
     "lint": "eslint --cache . --ext js,jsx,ts,tsx",
-    "prepare": "husky && husky install",
+    "prepare": "husky install",
     "lint-staged": "lint-staged",
     "preview": "vite preview"
   },
@@ -16,9 +16,7 @@
     "**/*.{tsx,ts,jsx,js}": [
       "eslint --fix --cache",
       "prettier --write --cache"
-    ],
-    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    ]
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",

@@ -77,11 +77,10 @@ export const StepContainer = styled.div`
 export const ButtonContainer = styled.div`
   button {
     font-size: 20px;
-    width: 320px;
+    width: 100%;
     height: 64px;
 
     @media screen and (max-width: 1023px) {
-      width: 100%;
       height: 100%;
     }
 
