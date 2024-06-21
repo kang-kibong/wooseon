@@ -1,11 +1,12 @@
-import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
-import Catchphrase from "../components/home/Catchphrase";
-import ServiceFlow from "../components/home/ServiceFlow";
-import ServiceEffect from "../components/home/ServiceEffect";
-import CompanyMarquee from "../components/home/CompanyMarquee";
-import Guidance from "../components/home/Guidance";
-import FAQ from "../components/home/FAQ";
+import { Header, Footer } from '@components/common'
+import {
+  Catchphrase,
+  ServiceFlow,
+  ServiceEffect,
+  CompanyMarquee,
+  Guidance,
+  FAQ,
+} from '@components/home'
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
       </main>
       <Footer />
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

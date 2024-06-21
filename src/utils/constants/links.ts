@@ -1,3 +1,3 @@
 export const LINKS = {
-  FORM: "https://tally.so/r/nPAKW5",
-};
+  FORM: 'https://tally.so/r/nPAKW5',
+}
